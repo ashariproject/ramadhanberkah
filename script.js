@@ -106,7 +106,7 @@ function renderKajianCards(data) {
       ? ((k.ringkasan.pembuka || '') + (k.ringkasan.poin_utama && k.ringkasan.poin_utama[0] ? ' ' + k.ringkasan.poin_utama[0] : ''))
       : '🕐 Video &amp; ringkasan kajian ini segera hadir. Pantau terus channel YouTube Masjid As Sakinah!';
     const actions = hasVideo
-      ? '<button class="kajian-btn video" onclick="openSummary(' + k.id + ')">▶ Video</button>'
+      ? '<button class="kajian-btn video" onclick="openSummary(' + k.id + ', true)">▶ Video</button>'
       + '<button class="kajian-btn summary" onclick="openSummary(' + k.id + ')">📄 Ringkasan</button>'
       + '<button class="kajian-btn infog" onclick="openInfografis(' + k.id + ')">🖼 Infografis</button>'
       : '<span class="kajian-btn" style="color:var(--gold);opacity:.7;cursor:default;font-style:italic;">🌙 Segera Hadir…</span>';
@@ -161,7 +161,7 @@ window.switchTab = function (tab) {
 };
 
 // ─── Modal: Ringkasan ─────────────────────────────
-window.openSummary = function (id) {
+window.openSummary = function (id, autoplay) {
   const k = allKajian.find(function (x) { return x.id === id; });
   if (!k) return;
   currentKajianId = id;
@@ -208,13 +208,33 @@ window.openSummary = function (id) {
     body += '<h4>💡 Penutup</h4><p>' + k.ringkasan.penutup + '</p>';
   }
 
+  // Reset container video
+  const vidContainer = document.getElementById('modalVideo');
+  vidContainer.innerHTML = '';
+  vidContainer.style.display = 'none';
+
   document.getElementById('modalBody').innerHTML = body;
 
   const ytBtn = document.getElementById('modalYtBtn');
   const ytUrl = k.youtube_url || DATA.masjid.youtube_channel;
-  ytBtn.onclick = function () { window.open(ytUrl, '_blank'); };
+
+  // Jika ada YouTube ID, embed video saat tombol diklik
+  if (k.youtube_id) {
+    ytBtn.innerHTML = '▶ Putar Video';
+    ytBtn.onclick = function () {
+      vidContainer.style.display = 'block';
+      vidContainer.innerHTML = '<iframe src="https://www.youtube.com/embed/' + k.youtube_id + '?autoplay=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%; aspect-ratio:16/9;"></iframe>';
+      ytBtn.style.display = 'none'; // Sembunyikan tombol setelah diklik
+    };
+  } else {
+    ytBtn.innerHTML = '▶ Tonton di YouTube';
+    ytBtn.onclick = function () { window.open(ytUrl, '_blank'); };
+  }
 
   openModal('summaryModal');
+  if (autoplay && k.youtube_id) {
+    if (ytBtn.offsetParent !== null) ytBtn.click();
+  }
 };
 
 // ─── Modal: Infografis ────────────────────────────
@@ -343,7 +363,13 @@ window.openModal = function (id) {
 };
 window.closeModal = function (id) {
   const el = document.getElementById(id);
-  if (el) el.classList.remove('open');
+  if (el) {
+    el.classList.remove('open');
+    if (id === 'summaryModal') {
+      const v = document.getElementById('modalVideo');
+      if (v) v.innerHTML = '';
+    }
+  }
   document.body.style.overflow = '';
 };
 document.addEventListener('keydown', function (e) {
