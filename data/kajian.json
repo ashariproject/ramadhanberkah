@@ -890,6 +890,29 @@
         ],
         "warna": "#1A5276"
       }
+    },
+    {
+      "id": 27,
+      "hari": "Selasa",
+      "tanggal": "17 Maret 2026",
+      "ramadhan": "27 Ramadhan 1447 H",
+      "pemateri": "",
+      "foto_pemateri": "",
+      "judul": "Kajian 27 Ramadhan",
+      "tag": "tematik",
+      "youtube_url": "",
+      "youtube_id": "",
+      "ringkasan": {
+        "pembuka": "",
+        "poin_utama": [],
+        "ayat": "",
+        "penutup": ""
+      },
+      "infografis": {
+        "judul": "Kajian 27 Ramadhan",
+        "poin": [],
+        "warna": "#0D5C63"
+      }
     }
   ]
 }
