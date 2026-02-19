@@ -58,6 +58,22 @@ window.avatarFallback = function (name, size) {
   return div.firstChild;
 };
 
+// ─── Helpers ─────────────────────────────────────
+function getYoutubeId(url) {
+  if (!url) return null;
+  const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+  const match = url.match(regExp);
+  return (match && match[2].length === 11) ? match[2] : null;
+}
+
+window.playFeatured = function (id) {
+  const iframe = document.getElementById('featuredVideo');
+  if (iframe) {
+    iframe.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+};
+
 function avatarEl(src, name, size) {
   size = size || 36;
   if (src) {
@@ -73,12 +89,19 @@ function renderPlaylistCards() {
   if (!grid) return;
 
   grid.innerHTML = allKajian.map(function (k, i) {
-    const thumb = k.youtube_id
-      ? '<img src="https://img.youtube.com/vi/' + k.youtube_id + '/mqdefault.jpg" alt="' + k.judul + '" loading="lazy">'
-      : '<div class="thumb-placeholder">📹</div>';
-    const href = k.youtube_url || '#';
+    const yid = k.youtube_id || getYoutubeId(k.youtube_url);
 
-    return '<a class="playlist-card" href="' + href + '" target="_blank" rel="noopener">'
+    // Thumbnail: prioritas youtube_id
+    const thumb = yid
+      ? '<img src="https://img.youtube.com/vi/' + yid + '/mqdefault.jpg" alt="' + k.judul + '" loading="lazy">'
+      : '<div class="thumb-placeholder">📹</div>';
+
+    // Jika ada ID, mainkan di featuredVideo. Jika tidak, link eksternal (atau #)
+    const attr = yid
+      ? 'href="javascript:void(0)" onclick="playFeatured(\'' + yid + '\')"'
+      : 'href="' + (k.youtube_url || '#') + '" target="_blank" rel="noopener"';
+
+    return '<a class="playlist-card" ' + attr + '>'
       + '<div class="playlist-thumb-wrap">' + thumb + '<div class="play-overlay">▶</div></div>'
       + '<div class="playlist-info">'
       + '<div class="playlist-ep">Ep ' + (i + 1) + ' · ' + k.ramadhan + '</div>'
