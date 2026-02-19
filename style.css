@@ -49,14 +49,14 @@ body {
 /* === HERO === */
 .hero {
   position: relative;
-  min-height: 380px;
+  min-height: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   background: linear-gradient(160deg, #0A1628 0%, #0D3B4A 50%, #0A2030 100%);
   overflow: hidden;
-  padding: 60px 20px 80px;
+  padding: 18px 16px 22px;
 }
 
 .hero::before {
@@ -86,62 +86,46 @@ body {
 }
 
 .mosque-icon {
-  font-size: 3.5rem;
-  margin-bottom: 8px;
-  filter: drop-shadow(0 0 16px rgba(212, 175, 55, 0.6));
+  font-size: 1.8rem;
+  margin-bottom: 4px;
+  filter: drop_shadow(0 0 10px rgba(212, 175, 55, 0.6));
 }
 
 .hero-label {
-  font-size: 0.78rem;
-  letter-spacing: 0.15em;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: 12px;
+  margin-bottom: 4px;
   font-weight: 500;
 }
 
 .hero-title {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .arabic {
   font-family: 'Amiri', serif;
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   color: var(--gold-light);
   display: block;
-  line-height: 1.3;
-  text-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+  line-height: 1.2;
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
 }
 
 .hero-subtitle {
-  font-size: 1rem;
+  font-size: 0.82rem;
   font-weight: 600;
   color: var(--text);
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .hero-desc {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  line-height: 1.6;
-  margin-bottom: 20px;
+  display: none;
 }
 
 .btn-hero {
-  display: inline-block;
-  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
-  color: #0A0F1E;
-  font-weight: 700;
-  font-size: 0.9rem;
-  padding: 12px 28px;
-  border-radius: 50px;
-  text-decoration: none;
-  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.btn-hero:active {
-  transform: scale(0.96);
+  display: none;
 }
 
 .crescent-deco {
@@ -176,13 +160,13 @@ body {
 
 .tab-btn {
   flex: 1;
-  min-width: 90px;
+  min-width: 80px;
   background: none;
   border: none;
   color: var(--text-muted);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  padding: 14px 8px;
+  padding: 10px 6px;
   cursor: pointer;
   border-bottom: 3px solid transparent;
   transition: all 0.2s;
@@ -209,27 +193,27 @@ body {
 }
 
 .section-header {
-  padding: 20px 16px 12px;
+  padding: 10px 12px 8px;
   border-bottom: 1px solid var(--border);
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .section-header h2 {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-weight: 700;
   color: var(--gold);
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .section-header p {
-  font-size: 0.82rem;
+  font-size: 0.75rem;
   color: var(--text-muted);
 }
 
 /* === FEATURED VIDEO === */
 .featured-video-wrap {
-  margin: 0 16px 20px;
-  border-radius: var(--radius);
+  margin: 0 10px 12px;
+  border-radius: var(--radius-sm);
   overflow: hidden;
   background: var(--card-bg);
   box-shadow: var(--shadow);
@@ -238,10 +222,10 @@ body {
 .video-label {
   background: linear-gradient(90deg, var(--teal-dark), var(--teal));
   color: var(--gold-light);
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 600;
-  padding: 8px 16px;
-  letter-spacing: 0.05em;
+  padding: 5px 12px;
+  letter-spacing: 0.04em;
 }
 
 .video-responsive {
@@ -263,12 +247,12 @@ body {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 14px;
+  padding: 10px;
   background: linear-gradient(135deg, #FF0000, #CC0000);
   color: #fff;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.88rem;
+  font-size: 0.8rem;
   transition: opacity 0.2s;
 }
 
@@ -284,18 +268,18 @@ body {
 .playlist-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 12px;
-  padding: 0 16px 16px;
+  gap: 8px;
+  padding: 0 10px 10px;
 }
 
 .playlist-card {
   background: var(--card-bg);
-  border-radius: var(--radius-sm);
+  border-radius: 8px;
   border: 1px solid var(--border);
   display: flex;
-  gap: 12px;
+  gap: 8px;
   align-items: center;
-  padding: 10px;
+  padding: 7px 8px;
   cursor: pointer;
   transition: transform 0.15s, border-color 0.15s;
   text-decoration: none;
@@ -320,13 +304,13 @@ body {
 
 .playlist-thumb-wrap {
   position: relative;
-  width: 110px;
-  min-width: 110px;
+  width: 88px;
+  min-width: 88px;
 }
 
 .playlist-thumb-wrap img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 6px;
   display: block;
 }
 
@@ -337,8 +321,8 @@ body {
   align-items: center;
   justify-content: center;
   background: rgba(0, 0, 0, 0.35);
-  border-radius: 8px;
-  font-size: 1.4rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
 }
 
 .playlist-info {
@@ -347,19 +331,19 @@ body {
 }
 
 .playlist-ep {
-  font-size: 0.72rem;
+  font-size: 0.65rem;
   color: var(--gold);
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .playlist-title {
-  font-size: 0.88rem;
+  font-size: 0.8rem;
   font-weight: 600;
   color: var(--text);
-  line-height: 1.35;
-  margin-bottom: 4px;
+  line-height: 1.3;
+  margin-bottom: 2px;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -367,13 +351,13 @@ body {
 }
 
 .playlist-ustadz {
-  font-size: 0.76rem;
+  font-size: 0.7rem;
   color: var(--text-muted);
 }
 
 /* === SEARCH === */
 .search-wrap {
-  padding: 0 16px 12px;
+  padding: 0 10px 8px;
 }
 
 .search-input {
@@ -382,8 +366,8 @@ body {
   border: 1px solid var(--border);
   border-radius: 50px;
   color: var(--text);
-  font-size: 0.9rem;
-  padding: 12px 20px;
+  font-size: 0.82rem;
+  padding: 9px 16px;
   font-family: 'Inter', sans-serif;
   outline: none;
   transition: border-color 0.2s;
@@ -400,8 +384,8 @@ body {
 /* === FILTER CHIPS === */
 .filter-chips {
   display: flex;
-  gap: 8px;
-  padding: 0 16px 16px;
+  gap: 6px;
+  padding: 0 10px 8px;
   overflow-x: auto;
   scrollbar-width: none;
 }
@@ -416,8 +400,8 @@ body {
   border: 1px solid var(--border);
   color: var(--text-muted);
   border-radius: 50px;
-  padding: 7px 16px;
-  font-size: 0.8rem;
+  padding: 5px 12px;
+  font-size: 0.72rem;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s;
@@ -433,18 +417,18 @@ body {
 
 /* === KAJIAN CARDS === */
 .kajian-list {
-  padding: 0 16px;
+  padding: 0 10px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 8px;
 }
 
 .kajian-card {
   background: var(--card-bg);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-radius: var(--radius-sm);
   overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   transition: border-color 0.2s, transform 0.15s;
 }
 
@@ -453,22 +437,22 @@ body {
 }
 
 .kajian-card-header {
-  padding: 14px 14px 10px;
+  padding: 9px 10px 6px;
   display: flex;
   align-items: flex-start;
-  gap: 12px;
+  gap: 8px;
 }
 
 .kajian-number {
-  width: 36px;
-  height: 36px;
-  min-width: 36px;
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--teal), var(--teal-light));
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 700;
   color: var(--gold-light);
 }
@@ -481,42 +465,42 @@ body {
   display: inline-block;
   background: rgba(212, 175, 55, 0.12);
   color: var(--gold);
-  font-size: 0.68rem;
+  font-size: 0.6rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   border-radius: 50px;
-  padding: 3px 10px;
-  margin-bottom: 6px;
+  padding: 2px 8px;
+  margin-bottom: 3px;
 }
 
 .kajian-title {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 700;
-  line-height: 1.35;
+  line-height: 1.3;
   color: var(--text);
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .kajian-ustadz {
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   color: var(--text-muted);
 }
 
 .kajian-tanggal {
-  font-size: 0.75rem;
+  font-size: 0.68rem;
   color: var(--text-muted);
-  margin-top: 2px;
+  margin-top: 1px;
 }
 
 /* preview excerpt */
 .kajian-excerpt {
-  padding: 0 14px 10px;
-  font-size: 0.82rem;
+  padding: 0 10px 6px;
+  font-size: 0.75rem;
   color: var(--text-muted);
-  line-height: 1.55;
+  line-height: 1.45;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -531,14 +515,14 @@ body {
   background: none;
   border: none;
   color: var(--text-muted);
-  font-size: 0.8rem;
+  font-size: 0.72rem;
   font-weight: 600;
-  padding: 13px 8px;
+  padding: 9px 4px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 4px;
   transition: background 0.15s, color 0.15s;
   font-family: 'Inter', sans-serif;
 }
@@ -593,18 +577,18 @@ body {
 .info-grid {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 0 16px 16px;
+  gap: 8px;
+  padding: 0 10px 10px;
 }
 
 .info-item {
   display: flex;
   align-items: flex-start;
-  gap: 14px;
+  gap: 10px;
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  padding: 14px;
+  padding: 10px;
 }
 
 .info-emoji {
@@ -628,13 +612,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  margin: 0 16px 10px;
-  padding: 14px;
+  gap: 8px;
+  margin: 0 10px 8px;
+  padding: 11px;
   border-radius: var(--radius-sm);
   text-decoration: none;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   transition: opacity 0.2s;
 }
 
@@ -654,23 +638,23 @@ body {
 
 /* === IMSAKIYAH === */
 .imsakiyah-card {
-  margin: 0 16px 16px;
+  margin: 0 10px 10px;
   background: linear-gradient(135deg, #0D1B2A, var(--bg3));
   border: 1px solid rgba(212, 175, 55, 0.3);
-  border-radius: var(--radius);
-  padding: 20px 16px;
+  border-radius: var(--radius-sm);
+  padding: 12px;
 }
 
 .imsakiyah-card h3 {
-  font-size: 1rem;
+  font-size: 0.88rem;
   color: var(--gold);
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .imsakiyah-card>p {
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   color: var(--text-muted);
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .waktu-sholat-grid {
@@ -682,23 +666,23 @@ body {
 .waktu-item {
   background: var(--bg2);
   border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 10px 8px;
+  border-radius: 8px;
+  padding: 7px 4px;
   text-align: center;
 }
 
 .waktu-item span {
   display: block;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   color: var(--text-muted);
-  margin-bottom: 4px;
+  margin-bottom: 2px;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
 }
 
 .waktu-item strong {
   display: block;
-  font-size: 1rem;
+  font-size: 0.88rem;
   color: var(--gold-light);
   font-weight: 700;
 }
@@ -752,12 +736,12 @@ body {
 
 .modal-card {
   background: var(--bg2);
-  border-radius: 24px 24px 0 0;
+  border-radius: 20px 20px 0 0;
   width: 100%;
   max-width: 600px;
-  max-height: 90vh;
+  max-height: 88vh;
   overflow-y: auto;
-  padding: 20px 20px calc(20px + var(--safe-bottom));
+  padding: 16px 16px calc(16px + var(--safe-bottom));
   position: relative;
   animation: slideUp 0.3s ease;
   border-top: 2px solid var(--border);
@@ -835,17 +819,17 @@ body {
 
 .modal-actions {
   display: flex;
-  gap: 10px;
-  margin-top: 20px;
+  gap: 8px;
+  margin-top: 14px;
 }
 
 .btn-modal-yt,
 .btn-modal-infog {
   flex: 1;
-  padding: 13px 10px;
+  padding: 11px 8px;
   border-radius: var(--radius-sm);
   border: none;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 700;
   cursor: pointer;
   transition: opacity 0.2s;
@@ -925,13 +909,13 @@ body {
   background: none;
   border: none;
   color: var(--text-muted);
-  padding: 10px 8px;
+  padding: 8px 6px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
-  font-size: 0.68rem;
+  gap: 2px;
+  font-size: 0.62rem;
   font-family: 'Inter', sans-serif;
   transition: color 0.2s;
 }
@@ -941,7 +925,7 @@ body {
 }
 
 .bnav-icon {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 /* === FAB scroll top === */
@@ -972,15 +956,29 @@ body {
 /* === Desktop overrides === */
 @media (min-width: 640px) {
   .hero {
-    min-height: 420px;
+    padding: 30px 20px 40px;
+  }
+
+  .mosque-icon {
+    font-size: 2.5rem;
   }
 
   .arabic {
-    font-size: 3rem;
+    font-size: 2.2rem;
   }
 
   .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+
+  .hero-desc {
+    display: block;
+    font-size: 0.82rem;
+    margin-bottom: 14px;
+  }
+
+  .btn-hero {
+    display: inline-block;
   }
 
   .playlist-grid {
