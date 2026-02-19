@@ -54,7 +54,9 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(160deg, #0A1628 0%, #0D3B4A 50%, #0A2030 100%);
+  background:
+    linear-gradient(160deg, rgba(10, 22, 40, 0.82) 0%, rgba(13, 59, 74, 0.75) 50%, rgba(10, 32, 48, 0.85) 100%),
+    url('hero.jpg') center center / cover no-repeat;
   overflow: hidden;
   padding: 18px 16px 22px;
 }
@@ -110,7 +112,7 @@ body {
   color: var(--gold-light);
   display: block;
   line-height: 1.2;
-  text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8), 0 0 20px rgba(212, 175, 55, 0.5);
 }
 
 .hero-subtitle {
@@ -118,6 +120,7 @@ body {
   font-weight: 600;
   color: var(--text);
   margin-bottom: 4px;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.9);
 }
 
 .hero-desc {
