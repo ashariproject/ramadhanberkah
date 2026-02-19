@@ -384,16 +384,11 @@ function checkReminder() {
   var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   var tomorrow = new Date(today); tomorrow.setDate(today.getDate() + 1);
 
-  var todayKajian = allKajian.find(function (k) {
-    var d = parseTanggal(k.tanggal);
-    return d && d.getTime() === today.getTime();
-  });
-  var tomorrowKajian = !todayKajian && allKajian.find(function (k) {
+  // Selalu tampilkan kajian BESOK sebagai pengingat
+  var kajian = allKajian.find(function (k) {
     var d = parseTanggal(k.tanggal);
     return d && d.getTime() === tomorrow.getTime();
   });
-
-  var kajian = todayKajian || tomorrowKajian;
   if (!kajian) return;
 
   // Cek apakah user sudah dismiss hari ini
@@ -406,22 +401,17 @@ function checkReminder() {
   var desc = document.getElementById('reminderDesc');
   if (!banner) return;
 
-  if (todayKajian) {
-    icon.textContent = '🔔';
-    title.textContent = 'Kajian Subuh Hari Ini!';
-    desc.textContent = 'Ep.' + kajian.id + ' · ' + kajian.judul + ' · ' + kajian.pemateri.split(',')[0];
-  } else {
-    icon.textContent = '📅';
-    title.textContent = 'Kajian Besok Pagi';
-    desc.textContent = 'Ep.' + kajian.id + ' · ' + kajian.judul + ' · ' + kajian.hari + ', ' + kajian.tanggal;
-  }
+  icon.textContent = '📅';
+  title.textContent = 'Kajian Subuh Besok — Siapkan Dirimu!';
+  desc.textContent = 'Ep.' + kajian.id + ' · ' + kajian.judul + ' · ' + kajian.pemateri.split(',')[0] + ' · ' + kajian.hari + ', ' + kajian.tanggal;
+
   banner.classList.add('show');
 
-  // Jika sudah ada notif aktif, ubah tombol
+  // Jika sudah ada izin notif, ubah tombol dan jadwalkan
   if (Notification.permission === 'granted') {
     var btn = document.getElementById('btnNotif');
     if (btn) { btn.textContent = '✅ Notif Aktif'; btn.disabled = true; }
-    scheduleLocalNotif(kajian, todayKajian);
+    scheduleLocalNotif(kajian);
   }
 }
 
