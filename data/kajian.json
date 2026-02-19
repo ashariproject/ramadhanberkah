@@ -1,0 +1,895 @@
+{
+  "masjid": {
+    "nama": "Masjid As Sakinah Pantai Mentari",
+    "kota": "Surabaya",
+    "youtube_channel": "https://www.youtube.com/@masjidassakinahpm",
+    "youtube_playlist_id": "PLbpi6ZahtOH6Ar_3GPy3workAS-KdRMEB",
+    "maps_url": "https://maps.google.com/?q=Masjid+As+Sakinah+Pantai+Mentari+Surabaya"
+  },
+  "kajian": [
+    {
+      "id": 1,
+      "hari": "Kamis",
+      "tanggal": "19 Februari 2026",
+      "ramadhan": "1 Ramadhan 1447 H",
+      "pemateri": "Prof. Dr. Ir. Annis Catur Adi, M.Si",
+      "foto_pemateri": "assets/foto/pemateri-1.jpg",
+      "judul": "Berpuasalah Niscaya Kamu Sehat? Tinjauan Syariat dan Sains",
+      "tag": "fiqih",
+      "youtube_url": "https://www.youtube.com/watch?v=MPkfDVnce-g",
+      "youtube_id": "MPkfDVnce-g",
+      "ringkasan": {
+        "pembuka": "Kajian pembuka Ramadhan 1447H membahas hikmah puasa dari perspektif syariat Islam dan ilmu kesehatan modern.",
+        "poin_utama": [
+          "Perintah puasa dalam Al-Qur'an dan tujuan taqwa",
+          "Manfaat puasa bagi sistem metabolisme dan pencernaan",
+          "Puasa intermiten dalam perspektif sains (autofagi sel)",
+          "Batas puasa bagi yang sakit: rukhsah vs kesembuhan"
+        ],
+        "ayat": "وَأَن تَصُومُوا خَيْرٌ لَّكُمْ إِن كُنتُمْ تَعْلَمُونَ (QS. Al-Baqarah: 184)",
+        "penutup": "Puasa bukan sekadar ibadah, ia adalah terapi jiwa dan raga yang telah terbukti secara syariat maupun sains."
+      },
+      "infografis": {
+        "judul": "Puasa & Kesehatan",
+        "poin": [
+          "🕌 Perintah Allah SWT",
+          "🔬 Autofagi Sel Tubuh",
+          "💪 Detox Metabolisme",
+          "🧠 Fokus & Kejernihan Pikiran",
+          "❤️ Kesehatan Jantung"
+        ],
+        "warna": "#0D5C63"
+      }
+    },
+    {
+      "id": 2,
+      "hari": "Jum'at",
+      "tanggal": "20 Februari 2026",
+      "ramadhan": "2 Ramadhan 1447 H",
+      "pemateri": "Drs. H. Muhammad Taufiq AB",
+      "foto_pemateri": "assets/foto/pemateri-2.jpg",
+      "judul": "Antara Ramadhan, Qur'an & Shodaqoh",
+      "tag": "akhlak",
+      "youtube_url": "",
+      "youtube_id": "",
+      "ringkasan": {
+        "pembuka": "Kajian tentang tiga amalan utama Ramadhan: puasa, tilawah Al-Qur'an, dan sedekah yang saling menguatkan.",
+        "poin_utama": [
+          "Hubungan organik antara Ramadhan dan Al-Qur'an",
+          "Sedekah Rasulullah SAW yang bagaikan angin kencang saat Ramadhan",
+          "Target khatam Al-Qur'an selama Ramadhan",
+          "Keutamaan sedekah di bulan suci: dilipatgandakan pahalanya"
+        ],
+        "ayat": "شَهْرُ رَمَضَانَ الَّذِي أُنزِلَ فِيهِ الْقُرْآنُ (QS. Al-Baqarah: 185)",
+        "penutup": "Jadikan Ramadhan momentum untuk akrab dengan Al-Qur'an dan murah tangan dalam bersedekah."
+      },
+      "infografis": {
+        "judul": "Ramadhan, Qur'an & Sedekah",
+        "poin": [
+          "📖 Tilawah Setiap Hari",
+          "🤲 Sedekah Berlipat Ganda",
+          "🌙 Bulan Diturunkannya Qur'an",
+          "💝 Infaq di Jalan Allah",
+          "⭐ Raih Malam Lailatul Qadar"
+        ],
+        "warna": "#1A5276"
+      }
+    },
+    {
+      "id": 3,
+      "hari": "Sabtu",
+      "tanggal": "21 Februari 2026",
+      "ramadhan": "3 Ramadhan 1447 H",
+      "pemateri": "Ustad H. M. Ikrom Rijal, Lc., MA",
+      "foto_pemateri": "assets/foto/pemateri-3.jpg",
+      "judul": "Meraih Kesempurnaan Pahala Puasa Di Era Digital",
+      "tag": "akhlak",
+      "youtube_url": "",
+      "youtube_id": "",
+      "ringkasan": {
+        "pembuka": "Tantangan menjaga kualitas puasa di era media sosial, gadget, dan konten digital yang tiada henti.",
+        "poin_utama": [
+          "Puasa dari konten negatif: scroll media sosial tanpa manfaat",
+          "Menjaga mata dan telinga di era digital",
+          "Memanfaatkan teknologi untuk ibadah: kajian online, Al-Qur'an digital",
+          "Detox digital selama Ramadhan untuk kekhusyukan"
+        ],
+        "ayat": "وَإِذَا سَأَلَكَ عِبَادِي عَنِّي فَإِنِّي قَرِيبٌ (QS. Al-Baqarah: 186)",
+        "penutup": "Era digital bisa menjadi berkah atau musibah untuk Ramadhan. Pilihannya ada di tangan kita."
+      },
+      "infografis": {
+        "judul": "Puasa di Era Digital",
+        "poin": [
+          "📵 Detox Media Sosial",
+          "📖 Qur'an Digital",
+          "🎧 Podcast Islami",
+          "🚫 Hindari Konten Negatif",
+          "🌐 Dakwah Digital"
+        ],
+        "warna": "#4A235A"
+      }
+    },
+    {
+      "id": 4,
+      "hari": "Minggu",
+      "tanggal": "22 Februari 2026",
+      "ramadhan": "4 Ramadhan 1447 H",
+      "pemateri": "Ustad Anwar Musyaddat, S.Si",
+      "foto_pemateri": "assets/foto/pemateri-4.jpg",
+      "judul": "Fiqih Shalat Tarawih & Witir",
+      "tag": "fiqih",
+      "youtube_url": "",
+      "youtube_id": "",
+      "ringkasan": {
+        "pembuka": "Panduan fiqih lengkap shalat Tarawih dan Witir: jumlah rakaat, tata cara, dan khilafiyah ulama.",
+        "poin_utama": [
+          "Dalil shalat Tarawih: 8 vs 20 rakaat (ikhtilaf ulama)",
+          "Tata cara Tarawih berjamaah di masjid",
+          "Keutamaan qiyam Ramadhan dan pengampunan dosa",
+          "Shalat Witir: ganjil, minimal 1 rakaat, waktu terbaik"
+        ],
+        "ayat": "مَن قَامَ رَمَضَانَ إِيمَانًا وَاحْتِسَابًا غُفِرَ لَهُ مَا تَقَدَّمَ مِن ذَنبِهِ (HR. Bukhari-Muslim)",
+        "penutup": "Shalat Tarawih adalah mahkota ibadah malam Ramadhan. Jangan lewatkan satu malamnya."
+      },
+      "infografis": {
+        "judul": "Fiqih Tarawih & Witir",
+        "poin": [
+          "🕌 8 atau 20 Rakaat",
+          "🤲 Niat & Tata Cara",
+          "🌙 Waktu Isya - Subuh",
+          "⚡ Witir Minimal 1 Rakaat",
+          "✨ Hapus Dosa Lalu"
+        ],
+        "warna": "#1E8449"
+      }
+    },
+    {
+      "id": 5,
+      "hari": "Senin",
+      "tanggal": "23 Februari 2026",
+      "ramadhan": "5 Ramadhan 1447 H",
+      "pemateri": "Dr. Muhammad Yahya, Ph.D",
+      "foto_pemateri": "assets/foto/pemateri-5.jpg",
+      "judul": "Tafsir Tematik",
+      "tag": "tafsir",
+      "youtube_url": "",
+      "youtube_id": "",
+      "ringkasan": {
+        "pembuka": "Kajian tafsir tematik membahas ayat-ayat Al-Qur'an yang berkaitan dengan tema Ramadhan dan puasa.",
+        "poin_utama": [
+          "Metode tafsir tematik (maudhui) dalam memahami Al-Qur'an",
+          "Ayat-ayat tentang puasa dan hikmahnya",
+          "Relevansi ayat Al-Qur'an dengan kehidupan modern",
+          "Cara mengamalkan pesan Al-Qur'an dalam keseharian"
+        ],
+        "ayat": "إِنَّ هَٰذَا الْقُرْآنَ يَهْدِي لِلَّتِي هِيَ أَقْوَمُ (QS. Al-Isra: 9)",
+        "penutup": "Al-Qur'an adalah petunjuk sempurna. Memahaminya secara tematik membuka cakrawala makna yang lebih luas."
+      },
+      "infografis": {
+        "judul": "Tafsir Tematik",
+        "poin": [
+          "📖 Metode Maudhui",
+          "🔍 Ayat Lengkap & Konteks",
+          "💡 Relevansi Modern",
+          "🌟 Hikmah Tersembunyi",
+          "❤️ Amalan dari Tafsir"
+        ],
+        "warna": "#784212"
+      }
+    },
+    {
+      "id": 6,
+      "hari": "Selasa",
+      "tanggal": "24 Februari 2026",
+      "ramadhan": "6 Ramadhan 1447 H",
+      "pemateri": "Prof. Dr. H. Moh. Ali Aziz, M.Ag",
+      "foto_pemateri": "assets/foto/pemateri-6.jpg",
+      "judul": "Tafsir Surah Al-Ikhlas",
+      "tag": "tafsir",
+      "youtube_url": "",
+      "youtube_id": "",
+      "ringkasan": {
+        "pembuka": "Tafsir mendalam Surah Al-Ikhlas yang setara sepertiga Al-Qur'an, membahas tauhid dalam 4 ayat singkat.",
+        "poin_utama": [
+          "Qul Huwallahu Ahad: keesaan Allah yang mutlak",
+          "Allahush Shamad: Allah tempat bergantung seluruh makhluk",
+          "Lam yalid wa lam yuulad: Allah tidak beranak dan tidak diperanakkan",
+          "Makna dan implikasi tauhid dalam kehidupan sehari-hari"
+        ],
+        "ayat": "قُلْ هُوَ اللَّهُ أَحَدٌ ۝ اللَّهُ الصَّمَدُ (QS. Al-Ikhlas: 1-2)",
+        "penutup": "Surah Al-Ikhlas adalah pondasi tauhid. Membacanya tiga kali setara khatam Al-Qur'an."
+      },
+      "infografis": {
+        "judul": "Tafsir Al-Ikhlas",
+        "poin": [
+          "☝️ Allah Maha Esa (Ahad)",
+          "🏛️ Tempat Bergantung (Shamad)",
+          "👶 Tidak Beranak",
+          "🚫 Tidak Diperanakkan",
+          "✨ Setara 1/3 Al-Qur'an"
+        ],
+        "warna": "#117A65"
+      }
+    },
+    {
+      "id": 7,
+      "hari": "Rabu",
+      "tanggal": "25 Februari 2026",
+      "ramadhan": "7 Ramadhan 1447 H",
+      "pemateri": "Ustad H. M. Shaleh Drehem, Lc., M.Ag",
+      "foto_pemateri": "assets/foto/pemateri-7.jpg",
+      "judul": "Performa Orang Beriman (part 1)",
+      "tag": "akidah",
+      "youtube_url": "",
+      "youtube_id": "",
+      "ringkasan": {
+        "pembuka": "Bagian pertama dari kajian tentang ciri-ciri dan performa seorang mukmin sejati dalam kehidupan.",
+        "poin_utama": [
+          "Definisi iman: keyakinan hati, ucapan lisan, amal perbuatan",
+          "Ciri mukmin dari QS. Al-Mu'minun ayat 1-11",
+          "Khusyu dalam shalat sebagai pondasi performa mukmin",
+          "Menjauhi perbuatan dan perkataan sia-sia (laghwi)"
+        ],
+        "ayat": "قَدْ أَفْلَحَ الْمُؤْمِنُونَ ۝ الَّذِينَ هُمْ فِي صَلَاتِهِمْ خَاشِعُونَ (QS. Al-Mukminun: 1-2)",
+        "penutup": "Orang beriman memiliki standar performa tinggi dalam beribadah dan bermuamalah. Ramadhan adalah latihan intensifnya."
+      },
+      "infografis": {
+        "judul": "Performa Mukmin (1)",
+        "poin": [
+          "🙏 Khusyu dalam Shalat",
+          "🚫 Jauhi Perbuatan Sia-sia",
+          "💰 Tunaikan Zakat",
+          "🔒 Jaga Kehormatan Diri",
+          "📋 Amanah & Tepat Janji"
+        ],
+        "warna": "#0D5C63"
+      }
+    },
+    {
+      "id": 8,
+      "hari": "Kamis",
+      "tanggal": "26 Februari 2026",
+      "ramadhan": "8 Ramadhan 1447 H",
+      "pemateri": "KH. Ahmad Mujab Muthohar",
+      "foto_pemateri": "assets/foto/pemateri-8.jpg",
+      "judul": "Al-Qur'an Sebagai Hidangan Di Bulan Suci",
+      "tag": "tafsir",
+      "youtube_url": "",
+      "youtube_id": "",
+      "ringkasan": {
+        "pembuka": "Al-Qur'an adalah hidangan ruhani terbaik di bulan Ramadhan. Kajian tentang adab dan keutamaan berinteraksi dengan Al-Qur'an.",
+        "poin_utama": [
+          "Ramadhan adalah bulan Al-Qur'an diturunkan",
+          "Adab tilawah: thaharah, tartil, tadabbur",
+          "Jibril muraja'ah Al-Qur'an bersama Rasulullah setiap Ramadhan",
+          "Target dan cara khatam Al-Qur'an selama 30 hari"
+        ],
+        "ayat": "وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا (QS. Al-Muzzammil: 4)",
+        "penutup": "Jadikan Al-Qur'an sebagai sahabat setia di Ramadhan ini. Bacalah, pahami, amalkan."
+      },
+      "infografis": {
+        "judul": "Al-Qur'an di Ramadhan",
+        "poin": [
+          "📖 Tilawah Setiap Hari",
+          "🤲 Adab Membaca Qur'an",
+          "🎯 Target Khatam 30 Hari",
+          "💭 Tadabbur Maknanya",
+          "🔄 Muroja'ah Hafalan"
+        ],
+        "warna": "#1A5276"
+      }
+    },
+    {
+      "id": 9,
+      "hari": "Jum'at",
+      "tanggal": "27 Februari 2026",
+      "ramadhan": "9 Ramadhan 1447 H",
+      "pemateri": "Ustad Ardhyansah, SHI",
+      "foto_pemateri": "assets/foto/pemateri-9.jpg",
+      "judul": "Mengendalikan Amarah Agar Menjadi Ketenangan (Al Hilm)",
+      "tag": "akhlak",
+      "youtube_url": "",
+      "youtube_id": "",
+      "ringkasan": {
+        "pembuka": "Kajian tentang al-hilm (ketenangan) sebagai lawan amarah, dan cara Ramadhan melatih pengendalian diri.",
+        "poin_utama": [
+          "Definisi al-hilm dan kedudukannya dalam Islam",
+          "Amarah adalah bara api syaitan, cara memadamkannya",
+          "Hadits: orang kuat bukan yang perkasa fisik, tapi yang menahan amarah",
+          "Teknik praktis mengendalikan marah: diam, wudhu, posisi badan"
+        ],
+        "ayat": "وَالْكَاظِمِينَ الْغَيْظَ وَالْعَافِينَ عَنِ النَّاسِ (QS. Ali Imran: 134)",
+        "penutup": "Puasa adalah latihan terbaik menahan amarah. Jadikan Ramadhan momentum menjadi pribadi yang lebih hilm."
+      },
+      "infografis": {
+        "judul": "Al-Hilm: Menahan Amarah",
+        "poin": [
+          "😤 Amarah = Bara Syaitan",
+          "💧 Wudhu Saat Marah",
+          "🤐 Diam adalah Emas",
+          "🧘 Duduk / Berbaring",
+          "❤️ Maafkan & Lupakan"
+        ],
+        "warna": "#4A235A"
+      }
+    },
+    {
+      "id": 10,
+      "hari": "Sabtu",
+      "tanggal": "28 Februari 2026",
+      "ramadhan": "10 Ramadhan 1447 H",
+      "pemateri": "Prof. Dr. Menachem Ali, S.S., M.A.Min",
+      "foto_pemateri": "assets/foto/pemateri-10.jpg",
+      "judul": "Kajian Tematik",
+      "tag": "tematik",
+      "youtube_url": "",
+      "youtube_id": "",
+      "ringkasan": {
+        "pembuka": "Kajian tematik khusus memasuki 10 hari pertama Ramadhan yang penuh rahmat.",
+        "poin_utama": [
+          "Evaluasi 10 hari pertama Ramadhan",
+          "Tema-tema penting Islam dalam konteks kekinian",
+          "Memperkuat amalan menuju 10 hari kedua",
+          "Doa dan harapan umat Islam di era global"
+        ],
+        "ayat": "إِنَّ اللَّهَ وَمَلَائِكَتَهُ يُصَلُّونَ عَلَى النَّبِيِّ (QS. Al-Ahzab: 56)",
+        "penutup": "10 hari pertama adalah hari-hari RAHMAT. Maksimalkan setiap detiknya."
+      },
+      "infografis": {
+        "judul": "10 Hari Pertama Ramadhan",
+        "poin": [
+          "🌟 Hari-hari RAHMAT",
+          "📊 Evaluasi Amal",
+          "🎯 Target Ibadah",
+          "🤲 Perbanyak Doa",
+          "⬆️ Tingkatkan Amalan"
+        ],
+        "warna": "#784212"
+      }
+    },
+    {
+      "id": 11,
+      "hari": "Minggu",
+      "tanggal": "1 Maret 2026",
+      "ramadhan": "11 Ramadhan 1447 H",
+      "pemateri": "Ustad H. M. Junaidi Sahal, M.Ag",
+      "foto_pemateri": "assets/foto/pemateri-11.jpg",
+      "judul": "Bersahabat Dengan Al-Qur'an",
+      "tag": "tafsir",
+      "youtube_url": "",
+      "youtube_id": "",
+      "ringkasan": {
+        "pembuka": "Membangun relasi intim dan konsisten dengan Al-Qur'an, bukan hanya di Ramadhan tetapi sepanjang hayat.",
+        "poin_utama": [
+          "Tingkatan interaksi dengan Al-Qur'an: membaca, memahami, menghafalkan, mengamalkan",
+          "Keutamaan orang yang akrab dengan Al-Qur'an di akhirat",
+          "Cara menjaga konsistensi tilawah harian",
+          "Al-Qur'an akan memberi syafa'at bagi yang membaca dan mengamalkannya"
+        ],
+        "ayat": "اقْرَأِ الْقُرْآنَ فَإِنَّهُ يَأْتِي يَوْمَ الْقِيَامَةِ شَفِيعًا لِأَصْحَابِهِ (HR. Muslim)",
+        "penutup": "Jadilah sahabat Al-Qur'an, bukan hanya tamu Ramadhan. Ia akan menjadi syafa'atmu di akhirat."
+      },
+      "infografis": {
+        "judul": "Bersahabat dengan Al-Qur'an",
+        "poin": [
+          "📖 Tilawah Rutin",
+          "💭 Tadabbur Makna",
+          "🧠 Hafalkan Ayat",
+          "✅ Amalkan Isinya",
+          "🌟 Syafa'at di Akhirat"
+        ],
+        "warna": "#1E8449"
+      }
+    },
+    {
+      "id": 12,
+      "hari": "Senin",
+      "tanggal": "2 Maret 2026",
+      "ramadhan": "12 Ramadhan 1447 H",
+      "pemateri": "Ustad M. Ali Misbahul Munir, Lc., M.Th.I",
+      "foto_pemateri": "assets/foto/pemateri-12.jpg",
+      "judul": "Jangan Tergesa-gesa",
+      "tag": "akhlak",
+      "youtube_url": "",
+      "youtube_id": "",
+      "ringkasan": {
+        "pembuka": "Al-'ajalah (tergesa-gesa) adalah sumber kesalahan. Kajian tentang hikmah bersikap tenang dan sabar.",
+        "poin_utama": [
+          "Hadits: tergesa-gesa adalah dari syaitan",
+          "Perbedaan cermat (itqan) vs tergesa-gesa vs lambat",
+          "Contoh keburukan tergesa-gesa dalam ibadah dan muamalah",
+          "Rancang hidup dengan basmallah dan tawakal"
+        ],
+        "ayat": "الْعَجَلَةُ مِنَ الشَّيْطَانِ وَالتَّأَنِّي مِنَ اللَّهِ (HR. Tirmidzi)",
+        "penutup": "Slowdown. Hidup yang bermakna bukan soal kecepatan, tapi kedalaman dan keikhlasan."
+      },
+      "infografis": {
+        "judul": "Jangan Tergesa-gesa",
+        "poin": [
+          "⚠️ Tergesa-gesa dari Syaitan",
+          "🧘 Tenang & Cermat",
+          "📋 Rencanakan dengan Baik",
+          "🙏 Tawakal kepada Allah",
+          "✅ Itqan dalam Beramal"
+        ],
+        "warna": "#117A65"
+      }
+    },
+    {
+      "id": 13,
+      "hari": "Selasa",
+      "tanggal": "3 Maret 2026",
+      "ramadhan": "13 Ramadhan 1447 H",
+      "pemateri": "KH. Ma'ruf Khozin",
+      "foto_pemateri": "assets/foto/pemateri-13.jpg",
+      "judul": "Jenis Puasa Wajib Dan Sunnah",
+      "tag": "fiqih",
+      "youtube_url": "",
+      "youtube_id": "",
+      "ringkasan": {
+        "pembuka": "Fiqih lengkap berbagai jenis puasa dalam Islam, dari yang wajib hingga yang sunnah muakkad.",
+        "poin_utama": [
+          "Puasa wajib: Ramadhan, qadha, nazar, kaffarah",
+          "Puasa sunnah: Senin-Kamis, Ayyamul Bidh, Asyura, Arafah",
+          "Puasa yang dilarang: hari Tasyrik, Idul Fitri, Idul Adha",
+          "Prioritas puasa qadha sebelum melakukan puasa sunnah"
+        ],
+        "ayat": "يَا أَيُّهَا الَّذِينَ آمَنُوا كُتِبَ عَلَيْكُمُ الصِّيَامُ (QS. Al-Baqarah: 183)",
+        "penutup": "Memperbanyak puasa sunnah pasca Ramadhan adalah tanda diterimanya ibadah kita."
+      },
+      "infografis": {
+        "judul": "Jenis-jenis Puasa",
+        "poin": [
+          "📌 Wajib: Ramadhan & Qadha",
+          "⭐ Sunnah: Senin-Kamis",
+          "🌕 Ayyamul Bidh 13-15",
+          "🕌 Asyura & Arafah",
+          "🚫 Terlarang: Ied & Tasyrik"
+        ],
+        "warna": "#0D5C63"
+      }
+    },
+    {
+      "id": 14,
+      "hari": "Rabu",
+      "tanggal": "4 Maret 2026",
+      "ramadhan": "14 Ramadhan 1447 H",
+      "pemateri": "Prof. Dr. H. Saiful Jazil, M.Ag",
+      "foto_pemateri": "assets/foto/pemateri-14.jpg",
+      "judul": "Warta Langsung Dari Alam Barzah",
+      "tag": "akidah",
+      "youtube_url": "",
+      "youtube_id": "",
+      "ringkasan": {
+        "pembuka": "Kajian akidah tentang alam barzah, kehidupan setelah kematian sebelum hari kiamat.",
+        "poin_utama": [
+          "Definisi alam barzah: antara dunia dan akhirat",
+          "Pertanyaan Munkar-Nakir: siapa Rabbmu, agamamu, nabimu?",
+          "Nikmat dan azab kubur berdasarkan dalil shahih",
+          "Amalan yang terus mengalir pahalanya hingga barzah"
+        ],
+        "ayat": "وَمِن وَرَائِهِم بَرْزَخٌ إِلَىٰ يَوْمِ يُبْعَثُونَ (QS. Al-Mukminun: 100)",
+        "penutup": "Alam barzah adalah cermin kehidupan kita di dunia. Persiapkan diri sebelum terlambat."
+      },
+      "infografis": {
+        "judul": "Alam Barzah",
+        "poin": [
+          "⚰️ Antara Dunia & Akhirat",
+          "❓ Pertanyaan Munkar-Nakir",
+          "✨ Nikmat Kubur",
+          "🔥 Azab Kubur",
+          "📿 Amalan Jariyah"
+        ],
+        "warna": "#1A5276"
+      }
+    },
+    {
+      "id": 15,
+      "hari": "Kamis",
+      "tanggal": "5 Maret 2026",
+      "ramadhan": "15 Ramadhan 1447 H",
+      "pemateri": "Letkol Laut H. Enjang Juaeni Zein, S.Ag",
+      "foto_pemateri": "assets/foto/pemateri-15.jpg",
+      "judul": "Bagaimana Mutaba'ah Nabi Muhammad SAW",
+      "tag": "sirah",
+      "youtube_url": "",
+      "youtube_id": "",
+      "ringkasan": {
+        "pembuka": "Mutaba'ah (mengikuti) Nabi Muhammad SAW adalah syarat diterimanya amal ibadah dan keimanan.",
+        "poin_utama": [
+          "Makna mutaba'ah: mengikuti sunnah dalam keyakinan, ibadah, dan akhlak",
+          "Tanda cinta kepada Nabi: mengikuti jejaknya",
+          "Sunnah-sunnah harian yang mudah diamalkan",
+          "Bahaya bid'ah dan pentingnya berpegang pada sunnah"
+        ],
+        "ayat": "قُلْ إِن كُنتُمْ تُحِبُّونَ اللَّهَ فَاتَّبِعُونِي (QS. Ali Imran: 31)",
+        "penutup": "Cinta kepada Nabi SAW dibuktikan dengan mengikuti sunnahnya, bukan sekadar lisan."
+      },
+      "infografis": {
+        "judul": "Mutaba'ah Nabi SAW",
+        "poin": [
+          "❤️ Cinta = Ikuti Sunnah",
+          "🌙 Sunnah Harian Nabi",
+          "📖 Shalat Tepat Waktu",
+          "🤲 Dzikir Pagi & Sore",
+          "🚫 Jauhi Bid'ah"
+        ],
+        "warna": "#4A235A"
+      }
+    },
+    {
+      "id": 16,
+      "hari": "Jum'at",
+      "tanggal": "6 Maret 2026",
+      "ramadhan": "16 Ramadhan 1447 H",
+      "pemateri": "Ustad H. Agung Cahyadi, Lc., MA",
+      "foto_pemateri": "assets/foto/pemateri-16.jpg",
+      "judul": "Kedudukan Zakat, Infaq & Shodaqoh Bagi Seorang Muslim",
+      "tag": "fiqih",
+      "youtube_url": "",
+      "youtube_id": "",
+      "ringkasan": {
+        "pembuka": "Memahami perbedaan dan keutamaan zakat, infaq, dan sedekah sebagai pilar ekonomi Islam.",
+        "poin_utama": [
+          "Perbedaan zakat (wajib) vs infaq vs sedekah",
+          "Nisab dan haul zakat mal, zakat profesi",
+          "Keutamaan infaq: harta tidak berkurang, justru bertambah",
+          "Sedekah jariyah: investasi akhirat terbaik"
+        ],
+        "ayat": "مَّثَلُ الَّذِينَ يُنفِقُونَ أَمْوَالَهُمْ فِي سَبِيلِ اللَّهِ كَمَثَلِ حَبَّةٍ (QS. Al-Baqarah: 261)",
+        "penutup": "ZIS bukan beban, melainkan investasi terbaik dunia dan akhirat. Semakin memberi, semakin berkah."
+      },
+      "infografis": {
+        "judul": "Zakat, Infaq & Shodaqoh",
+        "poin": [
+          "📌 Zakat: Wajib (Rukun Islam)",
+          "💝 Infaq: Sukarela",
+          "🤲 Sedekah: Setiap Kebaikan",
+          "📈 1 Menjadi 700 Lipat",
+          "🏦 Investasi Akhirat"
+        ],
+        "warna": "#1E8449"
+      }
+    },
+    {
+      "id": 17,
+      "hari": "Sabtu",
+      "tanggal": "7 Maret 2026",
+      "ramadhan": "17 Ramadhan 1447 H",
+      "pemateri": "Dr. KH. Khozin Mustafid, S.Ag., M.Pd.I",
+      "foto_pemateri": "assets/foto/pemateri-17.jpg",
+      "judul": "Menyongsong Nuzulul Qur'an Untuk Perbaiki Peradaban",
+      "tag": "tafsir",
+      "youtube_url": "",
+      "youtube_id": "",
+      "ringkasan": {
+        "pembuka": "Peringatan Nuzulul Qur'an pada 17 Ramadhan dan peran Al-Qur'an sebagai engine perbaikan peradaban manusia.",
+        "poin_utama": [
+          "Peristiwa Nuzulul Qur'an: wahyu pertama Iqra di Gua Hira",
+          "Al-Qur'an membangun peradaban Islam yang agung",
+          "Krisis peradaban modern dan jawaban Al-Qur'an",
+          "Peran umat Islam sebagai pewaris risalah Qur'ani"
+        ],
+        "ayat": "إِنَّا أَنزَلْنَاهُ فِي لَيْلَةٍ مُّبَارَكَةٍ (QS. Ad-Dukhan: 3)",
+        "penutup": "Al-Qur'an adalah blueprint peradaban terbaik. Umat yang membacanya akan memimpin dunia."
+      },
+      "infografis": {
+        "judul": "Nuzulul Qur'an",
+        "poin": [
+          "📅 17 Ramadhan: Wahyu Pertama",
+          "🌍 Al-Qur'an Ubah Peradaban",
+          "📖 Iqra: Perintah Pertama",
+          "🕌 Bangun Masjid & Ilmu",
+          "🌟 Umat Terbaik = Qur'ani"
+        ],
+        "warna": "#784212"
+      }
+    },
+    {
+      "id": 18,
+      "hari": "Minggu",
+      "tanggal": "8 Maret 2026",
+      "ramadhan": "18 Ramadhan 1447 H",
+      "pemateri": "Ustad Marzuki Imron, ST",
+      "foto_pemateri": "assets/foto/pemateri-18.jpg",
+      "judul": "Racun Bagi Otak",
+      "tag": "akhlak",
+      "youtube_url": "",
+      "youtube_id": "",
+      "ringkasan": {
+        "pembuka": "Kajian unik tentang hal-hal yang meracuni fungsi akal dan hati manusia dari perspektif Islam dan neurosains.",
+        "poin_utama": [
+          "Dosa dan maksiat melemahkan fungsi akal (hijab hati)",
+          "Konten negatif: pornografi, kekerasan, ghibah digital meracuni otak",
+          "Pengaruh makanan haram pada kemampuan berpikir",
+          "Dzikir dan Al-Qur'an sebagai antidot racun otak"
+        ],
+        "ayat": "كَلَّا ۖ بَلْ ۜ رَانَ عَلَىٰ قُلُوبِهِم مَّا كَانُوا يَكْسِبُونَ (QS. Al-Muthaffifin: 14)",
+        "penutup": "Jaga otakmu dari racun dosa dan konten haram. Otak yang bersih adalah modal ibadah yang sempurna."
+      },
+      "infografis": {
+        "judul": "Racun Bagi Otak",
+        "poin": [
+          "🚫 Dosa Menutup Hati",
+          "📵 Konten Negatif",
+          "🍔 Makanan Haram/Syubhat",
+          "💤 Begadang Sia-sia",
+          "✅ Antidot: Dzikir & Al-Qur'an"
+        ],
+        "warna": "#117A65"
+      }
+    },
+    {
+      "id": 19,
+      "hari": "Senin",
+      "tanggal": "9 Maret 2026",
+      "ramadhan": "19 Ramadhan 1447 H",
+      "pemateri": "Ustad H. M. Shaleh Drehem, Lc., M.Ag",
+      "foto_pemateri": "assets/foto/pemateri-7.jpg",
+      "judul": "Performa Orang Beriman (part 2)",
+      "tag": "akidah",
+      "youtube_url": "",
+      "youtube_id": "",
+      "ringkasan": {
+        "pembuka": "Lanjutan kajian performa mukmin: ciri-ciri tambahan dari QS. Al-Mukminun dan implementasinya.",
+        "poin_utama": [
+          "Memelihara shalat di awal waktu secara konsisten",
+          "Menjaga amanah dan menepati janji dalam segala hal",
+          "Menjaga kemaluan dari perbuatan zina dan haram",
+          "Mewarisi surga Firdaus sebagai balasan orang beriman sejati"
+        ],
+        "ayat": "أُولَٰئِكَ هُمُ الْوَارِثُونَ ۝ الَّذِينَ يَرِثُونَ الْفِرْدَوْسَ هُمْ فِيهَا خَالِدُونَ (QS. Al-Mukminun: 10-11)",
+        "penutup": "Mukmin sejati adalah pewaris Firdaus. Standar tinggi diperlukan untuk warisan setinggi itu."
+      },
+      "infografis": {
+        "judul": "Performa Mukmin (2)",
+        "poin": [
+          "⏰ Shalat di Awal Waktu",
+          "🤝 Tepati Amanah & Janji",
+          "🔒 Jaga Kehormatan",
+          "💰 Tunaikan Zakat",
+          "🏡 Warisi Surge Firdaus"
+        ],
+        "warna": "#0D5C63"
+      }
+    },
+    {
+      "id": 20,
+      "hari": "Selasa",
+      "tanggal": "10 Maret 2026",
+      "ramadhan": "20 Ramadhan 1447 H",
+      "pemateri": "Dr. KH. M. Syukron Djazilan, M.Ag",
+      "foto_pemateri": "assets/foto/pemateri-20.jpg",
+      "judul": "Sikap Muslim Menghadapi Masalah",
+      "tag": "akhlak",
+      "youtube_url": "",
+      "youtube_id": "",
+      "ringkasan": {
+        "pembuka": "Setiap manusia pasti menghadapi ujian. Kajian tentang sikap Muslim yang benar dalam menghadapi masalah hidup.",
+        "poin_utama": [
+          "Ujian adalah tanda kasih sayang Allah kepada hamba-Nya",
+          "Innalillahi wa inna ilaihi raji'un: respon pertama seorang mukmin",
+          "Sabar, shalat, dan doa sebagai senjata menghadapi masalah",
+          "Jangan berputus asa dari rahmat Allah: la taqnathu"
+        ],
+        "ayat": "وَلَنَبْلُوَنَّكُم بِشَيْءٍ مِّنَ الْخَوْفِ وَالْجُوعِ (QS. Al-Baqarah: 155)",
+        "penutup": "Masalah adalah ujian Allah untuk menaikkan derajat. Hadapi dengan sabar, ikhlas, dan tawakal."
+      },
+      "infografis": {
+        "judul": "Sikap Muslim Hadapi Masalah",
+        "poin": [
+          "🌊 Ujian = Kasih Allah",
+          "🙏 Inna Lillahi...",
+          "💪 Sabar & Ikhlas",
+          "🤲 Perbanyak Doa",
+          "☀️ Setelah Kesulitan Ada Kemudahan"
+        ],
+        "warna": "#1A5276"
+      }
+    },
+    {
+      "id": 21,
+      "hari": "Rabu",
+      "tanggal": "11 Maret 2026",
+      "ramadhan": "21 Ramadhan 1447 H",
+      "pemateri": "Drs. H. Muhammad Taufiq AB",
+      "foto_pemateri": "assets/foto/pemateri-2.jpg",
+      "judul": "Kajian Tematik",
+      "tag": "tematik",
+      "youtube_url": "",
+      "youtube_id": "",
+      "ringkasan": {
+        "pembuka": "Kajian tematik di awal 10 malam terakhir Ramadhan yang penuh dengan maghfirah (ampunan).",
+        "poin_utama": [
+          "Masuk 10 hari terakhir: malam-malam MAGHFIRAH",
+          "Meningkatkan intensitas ibadah di penghujung Ramadhan",
+          "I'tikaf: sunnah Rasulullah di 10 malam terakhir",
+          "Mengejar Lailatul Qadar di malam-malam ganjil"
+        ],
+        "ayat": "لَيْلَةُ الْقَدْرِ خَيْرٌ مِّنْ أَلْفِ شَهْرٍ (QS. Al-Qadr: 3)",
+        "penutup": "10 malam terakhir adalah kesempatan emas. Jangan biarkan berlalu tanpa amal terbaik."
+      },
+      "infografis": {
+        "judul": "10 Malam Terakhir Ramadhan",
+        "poin": [
+          "🌙 Malam MAGHFIRAH",
+          "🕌 I'tikaf di Masjid",
+          "🔢 Cari Malam Ganjil",
+          "🤲 Perbanyak Do'a",
+          "✨ Raih Lailatul Qadar"
+        ],
+        "warna": "#4A235A"
+      }
+    },
+    {
+      "id": 22,
+      "hari": "Kamis",
+      "tanggal": "12 Maret 2026",
+      "ramadhan": "22 Ramadhan 1447 H",
+      "pemateri": "KH. Ahmad Mujab Muthohar",
+      "foto_pemateri": "assets/foto/pemateri-8.jpg",
+      "judul": "Menyingkap Tabir-Tabir Do'a Nabi Ibrahim Dalam Al-Qur'an",
+      "tag": "tafsir",
+      "youtube_url": "",
+      "youtube_id": "",
+      "ringkasan": {
+        "pembuka": "Nabi Ibrahim AS dikenal dengan doa-doanya yang agung dalam Al-Qur'an. Kajian tafsir atas doa-doa tersebut.",
+        "poin_utama": [
+          "Doa Nabi Ibrahim untuk keturunannya (QS. Ibrahim: 35-41)",
+          "Doa membangun Ka'bah dan kota Makkah yang aman",
+          "Doa meminta keistiqamahan dan hati yang bersyukur",
+          "Mengambil pelajaran dari adab berdoa Nabi Ibrahim"
+        ],
+        "ayat": "رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِن ذُرِّيَّتِي (QS. Ibrahim: 40)",
+        "penutup": "Doa Nabi Ibrahim mengajarkan kita untuk mendoakan kebaikan bagi keluarga dan generasi penerus."
+      },
+      "infografis": {
+        "judul": "Doa-doa Nabi Ibrahim",
+        "poin": [
+          "🕌 Bangun Ka'bah & Makkah",
+          "👨‍👩‍👧 Doa untuk Keturunan",
+          "🙏 Minta Keistiqamahan",
+          "❤️ Hati yang Bersyukur",
+          "🌟 Adab Berdoa"
+        ],
+        "warna": "#784212"
+      }
+    },
+    {
+      "id": 23,
+      "hari": "Jum'at",
+      "tanggal": "13 Maret 2026",
+      "ramadhan": "23 Ramadhan 1447 H",
+      "pemateri": "Habib Musthofa Jamal bin Ridho Alaydrus",
+      "foto_pemateri": "assets/foto/pemateri-23.jpg",
+      "judul": "Puasanya Hati: Menjaga Lisan dan Pikiran Dari Penyakit Rohani",
+      "tag": "akhlak",
+      "youtube_url": "",
+      "youtube_id": "",
+      "ringkasan": {
+        "pembuka": "Puasa fisik harus dibarengi puasa hati: menjaga lisan dari ghibah, dusta, dan pikiran dari was-was.",
+        "poin_utama": [
+          "Penyakit hati: ujub, hasad, riya, sum'ah, dan kibr",
+          "Lisan adalah cermin hati: jagalah ucapan saat puasa",
+          "Pikiran negatif dan su'udzon merusak pahala puasa",
+          "Metode tazkiyatun nafs (penyucian jiwa) dalam Islam"
+        ],
+        "ayat": "قَدْ أَفْلَحَ مَن زَكَّاهَا ۝ وَقَدْ خَابَ مَن دَسَّاهَا (QS. Asy-Syams: 9-10)",
+        "penutup": "Tubuh berpuasa tapi hati bebas berbuat jahat? Puasamu tidak sempurna. Sucikan keduanya."
+      },
+      "infografis": {
+        "judul": "Puasanya Hati",
+        "poin": [
+          "🤐 Jaga Lisan dari Ghibah",
+          "👁️ Jaga Pandangan",
+          "💭 Pikiran Positif",
+          "❤️ Bersihkan Hasad & Ujub",
+          "🌸 Tazkiyatun Nafs"
+        ],
+        "warna": "#1E8449"
+      }
+    },
+    {
+      "id": 24,
+      "hari": "Sabtu",
+      "tanggal": "14 Maret 2026",
+      "ramadhan": "24 Ramadhan 1447 H",
+      "pemateri": "Prof. Dr. Menachem Ali, S.S., M.A.Min",
+      "foto_pemateri": "assets/foto/pemateri-10.jpg",
+      "judul": "Kajian Tematik",
+      "tag": "tematik",
+      "youtube_url": "",
+      "youtube_id": "",
+      "ringkasan": {
+        "pembuka": "Kajian tematik di penghujung Ramadhan: evaluasi dan persiapan menyambut Idul Fitri dengan penuh makna.",
+        "poin_utama": [
+          "Evaluasi ibadah selama Ramadhan: apa yang sudah dan belum",
+          "Tanda diterimanya Ramadhan: istiqamah setelahnya",
+          "Persiapan Idul Fitri yang bermakna bukan sekadar formalitas",
+          "Menjaga spirit Ramadhan sepanjang 11 bulan ke depan"
+        ],
+        "ayat": "وَلِتُكْمِلُوا الْعِدَّةَ وَلِتُكَبِّرُوا اللَّهَ عَلَىٰ مَا هَدَاكُمْ (QS. Al-Baqarah: 185)",
+        "penutup": "Ramadhan hampir berlalu. Pastikan kita keluar sebagai pribadi yang lebih baik dari sebelumnya."
+      },
+      "infografis": {
+        "judul": "Menuju Idul Fitri",
+        "poin": [
+          "📊 Evaluasi Amal Ramadhan",
+          "✅ Istiqamah Pasca Ramadhan",
+          "🎊 Rayakan dengan Makna",
+          "💰 Bayar Zakat Fitrah",
+          "🤝 Silaturahmi & Maaf"
+        ],
+        "warna": "#117A65"
+      }
+    },
+    {
+      "id": 25,
+      "hari": "Minggu",
+      "tanggal": "15 Maret 2026",
+      "ramadhan": "25 Ramadhan 1447 H",
+      "pemateri": "Habib Hasan bin Faruq Alkaff",
+      "foto_pemateri": "assets/foto/pemateri-25.jpg",
+      "judul": "Menjadi Hamba Rabbani, Bukan Hamba Ramadani",
+      "tag": "akhlak",
+      "youtube_url": "",
+      "youtube_id": "",
+      "ringkasan": {
+        "pembuka": "Pesan penting jelang akhir Ramadhan: jadilah hamba Allah sepanjang tahun, bukan hanya di bulan Ramadhan.",
+        "poin_utama": [
+          "Hamba Rabbani: konsisten beribadah di luar Ramadhan",
+          "Hamba Ramadani: semangat Ramadhan hilang saat Syawal tiba",
+          "Amalan kecil yang konsisten lebih dicintai Allah dari amalan besar yang terputus",
+          "Cara menjaga momentum Ramadhan: puasa Syawal, tilawah rutin, shalat malam"
+        ],
+        "ayat": "إِنَّ الَّذِينَ قَالُوا رَبُّنَا اللَّهُ ثُمَّ اسْتَقَامُوا (QS. Fussilat: 30)",
+        "penutup": "Ujian sesungguhnya bukan di bulan Ramadhan. Ujian adalah bagaimana kita di bulan Syawal dan seterusnya."
+      },
+      "infografis": {
+        "judul": "Hamba Rabbani",
+        "poin": [
+          "🌟 Konsisten Sepanjang Tahun",
+          "📖 Tilawah Rutin",
+          "🌙 Puasa Syawal 6 Hari",
+          "🕌 Shalat Malam",
+          "❤️ Istiqamah = Dicintai Allah"
+        ],
+        "warna": "#0D5C63"
+      }
+    },
+    {
+      "id": 26,
+      "hari": "Senin",
+      "tanggal": "16 Maret 2026",
+      "ramadhan": "26 Ramadhan 1447 H",
+      "pemateri": "Ustad M. Ali Misbahul Munir, Lc., M.Th.I",
+      "foto_pemateri": "assets/foto/pemateri-12.jpg",
+      "judul": "Obat Was-was",
+      "tag": "akhlak",
+      "youtube_url": "",
+      "youtube_id": "",
+      "ringkasan": {
+        "pembuka": "Was-was adalah bisikan syaitan yang mengganggu ibadah. Kajian tentang cara mengatasinya secara syar'i.",
+        "poin_utama": [
+          "Definisi was-was: keraguan berlebihan dalam ibadah",
+          "Was-was dalam wudhu, shalat, dan akidah",
+          "Syaitan menggunakan was-was untuk melemahkan ibadah",
+          "Obat was-was: ta'awwudz, yakin, tidak mengulangi ibadah"
+        ],
+        "ayat": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ ۝ مَلِكِ النَّاسِ ۝ مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ (QS. An-Nas: 1-4)",
+        "penutup": "Was-was bukan tanda keshalihan, itu jebakan syaitan. Lawanlah dengan yakin dan ta'awwudz."
+      },
+      "infografis": {
+        "judul": "Obat Was-was",
+        "poin": [
+          "🐍 Was-was dari Syaitan",
+          "🔊 Baca Ta'awwudz",
+          "✅ Yakin dalam Ibadah",
+          "🚫 Jangan Ulangi Ibadah",
+          "📖 Baca QS. An-Nas"
+        ],
+        "warna": "#1A5276"
+      }
+    }
+  ]
+}

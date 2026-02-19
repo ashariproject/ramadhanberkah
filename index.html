@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>Kajian Ramadhan | Masjid As Sakinah Pantai Mentari</title>
+  <meta name="description"
+    content="Playlist kajian Ramadhan lengkap dari Masjid As Sakinah Pantai Mentari Surabaya. Saksikan video, baca ringkasan, dan lihat infografis setiap kajian." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="mosque-icon">🕌</div>
+      <p class="hero-label">Masjid As Sakinah Pantai Mentari</p>
+      <h1 class="hero-title"><span class="arabic">رَمَضَان كَرِيم</span></h1>
+      <h2 class="hero-subtitle">Kajian Ramadhan 1447 H / 2026 M</h2>
+      <p class="hero-desc">Kajian ilmiah bersama para ustadz pilihan.<br>Raih keberkahan setiap hari di bulan suci.</p>
+      <a href="#playlist" class="btn-hero">▶ Tonton Kajian</a>
+    </div>
+    <div class="crescent-deco"></div>
+  </header>
+
+  <!-- ===== NAV TABS (sticky) ===== -->
+  <nav class="tab-nav" id="tabNav">
+    <button class="tab-btn active" data-tab="playlist" onclick="switchTab('playlist')">📺 Playlist</button>
+    <button class="tab-btn" data-tab="kajian" onclick="switchTab('kajian')">📖 Kajian</button>
+    <button class="tab-btn" data-tab="info" onclick="switchTab('info')">🕌 Info</button>
+  </nav>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="main-content">
+
+    <!-- TAB: PLAYLIST -->
+    <section id="tab-playlist" class="tab-section active">
+      <div class="section-header">
+        <h2>🎬 Playlist YouTube</h2>
+        <p>Tonton semua kajian Ramadhan dari channel resmi masjid</p>
+      </div>
+
+      <!-- Featured Video -->
+      <div class="featured-video-wrap">
+        <div class="video-label">▶ Video Terbaru</div>
+        <div class="video-responsive">
+          <iframe id="featuredVideo"
+            src="https://www.youtube.com/embed?listType=playlist&list=PLbpi6ZahtOH6Ar_3GPy3workAS-KdRMEB&index=0&rel=0"
+            title="Kajian Ramadhan Masjid As Sakinah" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <a href="https://www.youtube.com/@masjidassakinahpantaimentar2693" target="_blank" class="yt-channel-btn">
+          <span class="yt-icon">▶</span> Kunjungi Channel YouTube
+        </a>
+      </div>
+
+      <!-- Playlist Grid -->
+      <div class="playlist-grid" id="playlistGrid">
+        <!-- populated by script.js -->
+      </div>
+    </section>
+
+    <!-- TAB: KAJIAN LIST -->
+    <section id="tab-kajian" class="tab-section" id="kajian">
+      <div class="section-header">
+        <h2>📖 Daftar Kajian</h2>
+        <p>Ringkasan & infografis setiap sesi kajian Ramadhan</p>
+      </div>
+
+      <!-- Search bar -->
+      <div class="search-wrap">
+        <input type="search" id="searchKajian" class="search-input" placeholder="🔍 Cari judul kajian..."
+          oninput="filterKajian()" />
+      </div>
+
+      <!-- Filter chips -->
+      <div class="filter-chips" id="filterChips">
+        <button class="chip active" onclick="filterByTag('semua', this)">Semua</button>
+        <button class="chip" onclick="filterByTag('fiqih', this)">Fiqih</button>
+        <button class="chip" onclick="filterByTag('tafsir', this)">Tafsir</button>
+        <button class="chip" onclick="filterByTag('akidah', this)">Akidah</button>
+        <button class="chip" onclick="filterByTag('sirah', this)">Sirah</button>
+        <button class="chip" onclick="filterByTag('akhlak', this)">Akhlak</button>
+        <button class="chip" onclick="filterByTag('tematik', this)">Tematik</button>
+      </div>
+
+      <!-- Cards -->
+      <div class="kajian-list" id="kajianList">
+        <!-- populated by script.js -->
+      </div>
+    </section>
+
+    <!-- TAB: INFO MASJID -->
+    <section id="tab-info" class="tab-section">
+      <div class="section-header">
+        <h2>🕌 Tentang Masjid</h2>
+        <p>Masjid As Sakinah Pantai Mentari Surabaya</p>
+      </div>
+
+      <div class="info-card">
+        <div class="info-icon">🕌</div>
+        <h3>Masjid As Sakinah</h3>
+        <p>Masjid As Sakinah terletak di kawasan Pantai Mentari, Surabaya. Aktif menyelenggarakan kajian rutin dan
+          program Ramadhan setiap tahun.</p>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-item">
+          <span class="info-emoji">📍</span>
+          <div>
+            <strong>Lokasi</strong>
+            <p>Pantai Mentari, Surabaya, Jawa Timur</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-emoji">📅</span>
+          <div>
+            <strong>Kajian Ramadhan</strong>
+            <p>Setiap hari selama bulan Ramadhan 1447 H</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-emoji">🕐</span>
+          <div>
+            <strong>Waktu</strong>
+            <p>Kajian Subuh, Tarawih & Kultum Shubuh</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-emoji">📺</span>
+          <div>
+            <strong>Live Streaming</strong>
+            <p>YouTube Channel resmi masjid</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="https://www.youtube.com/@masjidassakinahpantaimentar2693" target="_blank" class="btn-social youtube">
+        <span>▶</span> YouTube Channel
+      </a>
+      <a href="https://maps.google.com/?q=Masjid+As+Sakinah+Pantai+Mentari+Surabaya" target="_blank"
+        class="btn-social maps">
+        <span>📍</span> Google Maps
+      </a>
+
+      <!-- Jadwal Imsakiyah teaser -->
+      <div class="imsakiyah-card">
+        <h3>🌙 Jadwal Imsakiyah Surabaya</h3>
+        <p>Ramadhan 1447 H / 2026 M</p>
+        <div class="waktu-sholat-grid">
+          <div class="waktu-item"><span>Imsak</span><strong id="wImsak">–</strong></div>
+          <div class="waktu-item"><span>Subuh</span><strong id="wSubuh">–</strong></div>
+          <div class="waktu-item"><span>Dzuhur</span><strong id="wDzuhur">–</strong></div>
+          <div class="waktu-item"><span>Ashar</span><strong id="wAshar">–</strong></div>
+          <div class="waktu-item"><span>Maghrib</span><strong id="wMaghrib">–</strong></div>
+          <div class="waktu-item"><span>Isya</span><strong id="wIsya">–</strong></div>
+        </div>
+        <p class="waktu-note">* Jadwal waktu sholat Kota Surabaya</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== MODAL: RINGKASAN ===== -->
+  <div class="modal-overlay" id="summaryModal" onclick="closeModal('summaryModal')">
+    <div class="modal-card" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('summaryModal')">✕</button>
+      <div class="modal-tag" id="modalTag">Fiqih</div>
+      <h2 class="modal-title" id="modalTitle">Judul Kajian</h2>
+      <p class="modal-meta" id="modalMeta">Ustadz • Tanggal</p>
+      <div class="modal-divider"></div>
+      <div class="modal-body" id="modalBody">
+        <!-- summary content -->
+      </div>
+      <div class="modal-actions">
+        <button class="btn-modal-yt" id="modalYtBtn" onclick="">▶ Tonton Video</button>
+        <button class="btn-modal-infog" onclick="openInfografis()">🖼 Infografis</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MODAL: INFOGRAFIS ===== -->
+  <div class="modal-overlay" id="infogModal" onclick="closeModal('infogModal')">
+    <div class="modal-card infog-card" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('infogModal')">✕</button>
+      <h3 class="modal-title" id="infogTitle">Infografis Kajian</h3>
+      <div class="infog-image-wrap" id="infogImageWrap">
+        <!-- infografis rendered by script -->
+      </div>
+      <a class="btn-download" id="infogDownloadBtn" href="#" download>⬇ Simpan Infografis</a>
+    </div>
+  </div>
+
+  <!-- ===== BOTTOM NAV (mobile) ===== -->
+  <nav class="bottom-nav">
+    <button class="bnav-btn active" onclick="switchTab('playlist')" id="bnav-playlist">
+      <span class="bnav-icon">📺</span>
+      <span>Playlist</span>
+    </button>
+    <button class="bnav-btn" onclick="switchTab('kajian')" id="bnav-kajian">
+      <span class="bnav-icon">📖</span>
+      <span>Kajian</span>
+    </button>
+    <button class="bnav-btn" onclick="switchTab('info')" id="bnav-info">
+      <span class="bnav-icon">🕌</span>
+      <span>Info</span>
+    </button>
+  </nav>
+
+  <!-- floating scroll-top -->
+  <button class="fab-top" id="fabTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+    title="Kembali ke atas">☝</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
