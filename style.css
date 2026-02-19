@@ -142,6 +142,86 @@ body {
   z-index: 1;
 }
 
+/* === REMINDER BANNER === */
+.reminder-banner {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: linear-gradient(90deg, rgba(13, 92, 99, 0.97), rgba(10, 32, 48, 0.97));
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+  position: relative;
+  z-index: 99;
+  animation: slideDown 0.4s ease;
+}
+
+.reminder-banner.show {
+  display: flex;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reminder-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.reminder-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.reminder-text strong {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--gold);
+}
+
+.reminder-text span {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.reminder-actions {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.btn-notif {
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  color: #0A0F1E;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  white-space: nowrap;
+}
+
+.btn-dismiss {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  border-radius: 50px;
+  font-size: 0.7rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+}
+
 /* === TAB NAV (Sticky top) === */
 .tab-nav {
   position: sticky;
