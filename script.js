@@ -101,7 +101,15 @@ function renderKajianCards(data) {
 
   list.innerHTML = data.map(function (k) {
     const tagLabel = k.tag.charAt(0).toUpperCase() + k.tag.slice(1);
-    const excerpt = (k.ringkasan.pembuka || '') + (k.ringkasan.poin_utama && k.ringkasan.poin_utama[0] ? ' ' + k.ringkasan.poin_utama[0] : '');
+    const hasVideo = !!k.youtube_url;
+    const excerpt = hasVideo
+      ? ((k.ringkasan.pembuka || '') + (k.ringkasan.poin_utama && k.ringkasan.poin_utama[0] ? ' ' + k.ringkasan.poin_utama[0] : ''))
+      : '🕐 Video &amp; ringkasan kajian ini segera hadir. Pantau terus channel YouTube Masjid As Sakinah!';
+    const actions = hasVideo
+      ? '<button class="kajian-btn video" onclick="openSummary(' + k.id + ')">▶ Video</button>'
+      + '<button class="kajian-btn summary" onclick="openSummary(' + k.id + ')">📄 Ringkasan</button>'
+      + '<button class="kajian-btn infog" onclick="openInfografis(' + k.id + ')">🖼 Infografis</button>'
+      : '<span class="kajian-btn" style="color:var(--gold);opacity:.7;cursor:default;font-style:italic;">🌙 Segera Hadir…</span>';
     return '<div class="kajian-card" data-id="' + k.id + '" data-tag="' + k.tag + '">'
       + '<div class="kajian-card-header">'
       + '<div class="kajian-number">' + k.id + '</div>'
@@ -114,11 +122,7 @@ function renderKajianCards(data) {
       + '<div class="kajian-tanggal">' + k.hari + ', ' + k.tanggal + ' · ' + k.ramadhan + '</div></div>'
       + '</div></div></div>'
       + '<div class="kajian-excerpt">' + excerpt + '</div>'
-      + '<div class="kajian-actions">'
-      + '<button class="kajian-btn video" onclick="openSummary(' + k.id + ')">▶ Video</button>'
-      + '<button class="kajian-btn summary" onclick="openSummary(' + k.id + ')">📄 Ringkasan</button>'
-      + '<button class="kajian-btn infog" onclick="openInfografis(' + k.id + ')">🖼 Infografis</button>'
-      + '</div></div>';
+      + '<div class="kajian-actions">' + actions + '</div></div>';
   }).join('');
 }
 
@@ -171,6 +175,25 @@ window.openSummary = function (id) {
     + '<span style="opacity:.6">·</span>'
     + '<span style="opacity:.7">' + k.hari + ', ' + k.tanggal + '</span>'
     + '<span style="opacity:.5;font-size:.75rem">' + k.ramadhan + '</span></div>';
+
+  // Jika belum ada video, tampilkan pesan tunggu
+  if (!k.youtube_url) {
+    document.getElementById('modalBody').innerHTML =
+      '<div style="text-align:center;padding:28px 12px;">'
+      + '<div style="font-size:2.2rem;margin-bottom:10px;">🌙</div>'
+      + '<p style="color:var(--gold);font-weight:700;font-size:0.95rem;margin-bottom:8px;">Video &amp; Ringkasan Segera Hadir</p>'
+      + '<p style="color:var(--text-muted);font-size:0.82rem;line-height:1.6;">Kajian ini akan segera tersedia setelah rekaman diunggah ke channel YouTube resmi Masjid As Sakinah.<br><br>Pantau terus:</p>'
+      + '<a href="https://www.youtube.com/@masjidassakinahpm" target="_blank" '
+      + 'style="display:inline-block;margin-top:14px;padding:10px 22px;background:linear-gradient(135deg,#FF0000,#CC0000);color:#fff;border-radius:50px;text-decoration:none;font-weight:700;font-size:0.82rem;">▶ Kunjungi Channel YouTube</a>'
+      + '</div>';
+    document.getElementById('modalYtBtn').style.display = 'none';
+    document.querySelector('.btn-modal-infog').style.display = 'none';
+    openModal('summaryModal');
+    return;
+  }
+
+  document.getElementById('modalYtBtn').style.display = '';
+  document.querySelector('.btn-modal-infog').style.display = '';
 
   let body = '<p>' + k.ringkasan.pembuka + '</p>';
   if (k.ringkasan.poin_utama && k.ringkasan.poin_utama.length) {
