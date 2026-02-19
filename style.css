@@ -355,7 +355,8 @@ body {
 
 .playlist-ustadz {
   font-size: 0.7rem;
-  color: var(--text-muted);
+  color: var(--teal-light);
+  font-weight: 600;
 }
 
 /* === SEARCH === */
@@ -487,7 +488,8 @@ body {
 
 .kajian-ustadz {
   font-size: 0.72rem;
-  color: var(--text-muted);
+  color: var(--teal-light);
+  font-weight: 600;
 }
 
 .kajian-tanggal {
