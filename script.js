@@ -270,17 +270,39 @@ window.openInfografis = function (id) {
   document.getElementById('infogTitle').textContent = k.infografis.judul;
 
   const wrap = document.getElementById('infogImageWrap');
-  wrap.innerHTML = '';
-  const canvas = document.createElement('canvas');
-  canvas.width = 540;
-  canvas.height = 360;
-  canvas.className = 'infog-canvas';
-  wrap.appendChild(canvas);
-  drawInfografis(canvas, k);
+  wrap.innerHTML = '<div style="padding:20px;text-align:center;color:var(--text-muted);">⏳ Memuat infografis...</div>';
 
   const dlBtn = document.getElementById('infogDownloadBtn');
-  dlBtn.href = canvas.toDataURL('image/png');
-  dlBtn.download = 'infografis-kajian-' + k.id + '.png';
+
+  // Coba load gambar statis info-{id}.png
+  const img = new Image();
+  img.src = 'assets/foto/info-' + k.id + '.png';
+  img.className = 'infog-img';
+  img.style.maxWidth = '100%';
+  img.style.height = 'auto';
+  img.style.borderRadius = '8px';
+  img.style.boxShadow = '0 4px 12px rgba(0,0,0,0.3)';
+
+  img.onload = function () {
+    wrap.innerHTML = '';
+    wrap.appendChild(img);
+    dlBtn.href = img.src;
+    dlBtn.download = 'infografis-kajian-' + k.id + '.png';
+  };
+
+  img.onerror = function () {
+    // Fallback ke canvas generator jika gambar tidak ada
+    wrap.innerHTML = '';
+    const canvas = document.createElement('canvas');
+    canvas.width = 540;
+    canvas.height = 360;
+    canvas.className = 'infog-canvas';
+    wrap.appendChild(canvas);
+    drawInfografis(canvas, k);
+
+    dlBtn.href = canvas.toDataURL('image/png');
+    dlBtn.download = 'infografis-kajian-' + k.id + '.png';
+  };
 
   closeModal('summaryModal');
   openModal('infogModal');
