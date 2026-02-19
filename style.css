@@ -500,14 +500,7 @@ body {
 
 /* preview excerpt */
 .kajian-excerpt {
-  padding: 0 10px 6px;
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  line-height: 1.45;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  display: none;
 }
 
 .kajian-actions {
