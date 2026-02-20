@@ -541,7 +541,35 @@ function scheduleLocalNotif(kajian, isToday) {
   }, diff);
 }
 
+// ─── Splash Screen ───────────────────────────────
+function initSplash() {
+  var splash = document.getElementById('splashScreen');
+  if (!splash) return;
+
+  // Hanya aktif di mobile (max-width 768px)
+  var isMobile = window.matchMedia('(max-width: 768px)').matches;
+  if (!isMobile) {
+    splash.style.display = 'none';
+    return;
+  }
+
+  // Cegah scroll saat splash tampil
+  document.body.style.overflow = 'hidden';
+
+  // Setelah 3 detik, mulai fade-out
+  setTimeout(function () {
+    splash.classList.add('splash-hide');
+    // Setelah animasi selesai (0.6s), hapus dari DOM
+    setTimeout(function () {
+      splash.remove();
+      document.body.style.overflow = '';
+    }, 620);
+  }, 3000);
+}
+
 // ─── Boot ─────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', function () {
+  initSplash();
   loadData().then(function () { checkReminder(); });
 });
+
