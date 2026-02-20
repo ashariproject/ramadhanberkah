@@ -24,7 +24,8 @@ async function loadData() {
     // Featured video: prioritaskan video yang sudah ada youtube_id-nya
     const iframe = document.getElementById('featuredVideo');
     if (iframe) {
-      const firstVideo = DATA.kajian.find(function (k) { return k.youtube_id; });
+      const withVideo = DATA.kajian.filter(function (k) { return k.youtube_id; });
+      const firstVideo = withVideo.length ? withVideo[withVideo.length - 1] : null;
       if (firstVideo) {
         iframe.src = 'https://www.youtube.com/embed/' + firstVideo.youtube_id + '?rel=0&showinfo=1';
       } else if (DATA.masjid.youtube_playlist_id) {
