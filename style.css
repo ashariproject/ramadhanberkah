@@ -853,6 +853,51 @@ body {
   color: #fff;
 }
 
+/* === QRIS SECTION === */
+.qris-section {
+  margin: 0 10px 16px;
+  background: linear-gradient(135deg, rgba(13, 92, 99, 0.25), rgba(13, 18, 32, 0.9));
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: var(--radius-sm);
+  padding: 16px 14px;
+  text-align: center;
+}
+
+.qris-tagline {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 6px;
+  letter-spacing: 0.01em;
+}
+
+.qris-sub {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.qris-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.qris-img {
+  width: 220px;
+  max-width: 100%;
+  border-radius: 12px;
+  border: 2px solid rgba(212, 175, 55, 0.35);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.qris-note {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
 /* === IMSAKIYAH === */
 .imsakiyah-card {
   margin: 0 10px 10px;
