@@ -436,111 +436,6 @@ function loadWaktuSholat() {
   set('wAshar', j.ashar); set('wMaghrib', j.maghrib); set('wIsya', j.isya);
 }
 
-// ─── Reminder / Pengingat Kajian ─────────────────
-var SUBUH_HOUR = 4, SUBUH_MIN = 10;   // Waktu kajian Subuh (04:10 WIB)
-var REMIND_BEFORE_MIN = 30;            // Ingatkan 30 menit sebelum
-
-function parseTanggal(str) {
-  var BULAN = {
-    'Januari': 1, 'Februari': 2, 'Maret': 3, 'April': 4, 'Mei': 5, 'Juni': 6,
-    'Juli': 7, 'Agustus': 8, 'September': 9, 'Oktober': 10, 'November': 11, 'Desember': 12
-  };
-  var parts = str.split(' ');
-  if (parts.length !== 3) return null;
-  return new Date(parseInt(parts[2]), BULAN[parts[1]] - 1, parseInt(parts[0]));
-}
-
-function checkReminder() {
-  if (!allKajian.length) return;
-  var now = new Date();
-  var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-  var tomorrow = new Date(today); tomorrow.setDate(today.getDate() + 1);
-
-  // Selalu tampilkan kajian BESOK sebagai pengingat
-  var kajian = allKajian.find(function (k) {
-    var d = parseTanggal(k.tanggal);
-    return d && d.getTime() === tomorrow.getTime();
-  });
-  if (!kajian) return;
-
-  // Cek apakah user sudah dismiss hari ini
-  var dismissed = localStorage.getItem('reminder_dismissed');
-  if (dismissed === today.toDateString()) return;
-
-  var banner = document.getElementById('reminderBanner');
-  var icon = document.getElementById('reminderIcon');
-  var title = document.getElementById('reminderTitle');
-  var desc = document.getElementById('reminderDesc');
-  if (!banner) return;
-
-  icon.textContent = '📅';
-  title.textContent = 'Kajian Subuh Besok — Siapkan Dirimu!';
-  desc.textContent = 'Ep.' + kajian.id + ' · ' + kajian.judul + ' · ' + kajian.pemateri.split(',')[0] + ' · ' + kajian.hari + ', ' + kajian.tanggal;
-
-  banner.classList.add('show');
-
-  // Jika sudah ada izin notif, ubah tombol dan jadwalkan
-  if (Notification.permission === 'granted') {
-    var btn = document.getElementById('btnNotif');
-    if (btn) { btn.textContent = '✅ Notif Aktif'; btn.disabled = true; }
-    scheduleLocalNotif(kajian);
-  }
-}
-
-window.dismissReminder = function () {
-  var banner = document.getElementById('reminderBanner');
-  if (banner) banner.classList.remove('show');
-  localStorage.setItem('reminder_dismissed', new Date().toDateString());
-};
-
-window.enableNotification = function () {
-  if (!('Notification' in window)) {
-    alert('Browser Anda tidak mendukung notifikasi.');
-    return;
-  }
-  Notification.requestPermission().then(function (perm) {
-    var btn = document.getElementById('btnNotif');
-    if (perm === 'granted') {
-      if (btn) { btn.textContent = '✅ Aktif!'; btn.disabled = true; }
-      new Notification('🔔 Pengingat Kajian Aktif', {
-        body: 'Anda akan diingatkan 30 menit sebelum Kajian Subuh.',
-        icon: 'hero.jpg'
-      });
-      // Cari kajian terdekat dan jadwalkan
-      var now = new Date();
-      var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-      var k = allKajian.find(function (x) {
-        var d = parseTanggal(x.tanggal);
-        return d && d >= today;
-      });
-      if (k) scheduleLocalNotif(k, parseTanggal(k.tanggal).getTime() === today.getTime());
-    } else {
-      if (btn) btn.textContent = '🔕 Ditolak';
-    }
-  });
-};
-
-function scheduleLocalNotif(kajian, isToday) {
-  if (Notification.permission !== 'granted') return;
-  var now = new Date();
-  var targetDate = parseTanggal(kajian.tanggal);
-  if (!targetDate) return;
-
-  // Waktu notifikasi = jam Subuh dikurangi REMIND_BEFORE_MIN
-  var remindMin = SUBUH_HOUR * 60 + SUBUH_MIN - REMIND_BEFORE_MIN;
-  targetDate.setHours(Math.floor(remindMin / 60), remindMin % 60, 0, 0);
-
-  var diff = targetDate.getTime() - now.getTime();
-  if (diff <= 0 || diff > 25 * 60 * 60 * 1000) return; // Hanya jadwalkan jika < 25 jam ke depan
-
-  setTimeout(function () {
-    new Notification('🕌 Kajian Subuh Segera Mulai!', {
-      body: 'Ep.' + kajian.id + ' · ' + kajian.judul + ' oleh ' + kajian.pemateri.split(',')[0],
-      icon: 'hero.jpg',
-      tag: 'kajian-reminder'
-    });
-  }, diff);
-}
 
 // ─── Splash Screen ───────────────────────────────
 function initSplash() {
@@ -571,6 +466,6 @@ function initSplash() {
 // ─── Boot ─────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', function () {
   initSplash();
-  loadData().then(function () { checkReminder(); });
+  loadData();
 });
 
