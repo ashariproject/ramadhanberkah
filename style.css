@@ -1331,6 +1331,26 @@ body {
   border-radius: 8px;
 }
 
+/* === FOOTER === */
+.main-footer {
+  padding: 30px 20px 100px;
+  text-align: center;
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.main-footer a {
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.main-footer p {
+  margin-bottom: 6px;
+}
+
 /* hidden by default */
 .hidden {
   display: none !important;
