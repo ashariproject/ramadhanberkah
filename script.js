@@ -428,12 +428,64 @@ window.addEventListener('scroll', function () {
   if (fab) fab.classList.toggle('visible', window.scrollY > 200);
 }, { passive: true });
 
-// ─── Waktu Sholat (Surabaya Ramadhan 1447H) ───────
-function loadWaktuSholat() {
-  const j = { imsak: '03:55', subuh: '04:05', dzuhur: '11:50', ashar: '15:06', maghrib: '17:52', isya: '19:02' };
-  function set(id, val) { const el = document.getElementById(id); if (el) el.textContent = val; }
-  set('wImsak', j.imsak); set('wSubuh', j.subuh); set('wDzuhur', j.dzuhur);
-  set('wAshar', j.ashar); set('wMaghrib', j.maghrib); set('wIsya', j.isya);
+// ─── Waktu Sholat (Dynamic API) ──────────────────
+async function fetchWaktuSholat(latitude, longitude, method) {
+  try {
+    const today = new Date();
+    const date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+    // Method 1 (Kemenag) or 2 (ISNA). Aladhan method 11 is for Majlis Ugama Islam Singapura, often close for Indonesia.
+    // However, default Kemenag settings are usually better handled by method 1 or 2 with adjustments.
+    // We'll use method 11 (Singapore/MUIS) which is very common for SE Asia.
+    const url = `https://api.aladhan.com/v1/timings/${date}?latitude=${latitude}&longitude=${longitude}&method=11`;
+    const res = await fetch(url);
+    const data = await res.json();
+    return data.data.timings;
+  } catch (e) {
+    console.error('Error fetching prayer times:', e);
+    return null;
+  }
+}
+
+async function loadWaktuSholat() {
+  const set = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
+  const locEl = document.getElementById('lokasiWaktu');
+
+  // Default Surabaya coord
+  let lat = -7.2575, lon = 112.7521, cityName = 'Surabaya';
+
+  const updateUI = (times) => {
+    if (!times) return;
+    set('wImsak', times.Imsak);
+    set('wSubuh', times.Fajr);
+    set('wDzuhur', times.Dhuhr);
+    set('wAshar', times.Asr);
+    set('wMaghrib', times.Maghrib);
+    set('wIsya', times.Isha);
+  };
+
+  const tryGeo = () => {
+    if ("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition(async (pos) => {
+        const times = await fetchWaktuSholat(pos.coords.latitude, pos.coords.longitude);
+        if (times) {
+          updateUI(times);
+          if (locEl) locEl.textContent = '* Jadwal waktu sholat berdasarkan lokasi Anda';
+        }
+      }, async (err) => {
+        // Fallback to Surabaya on error
+        const times = await fetchWaktuSholat(lat, lon);
+        updateUI(times);
+      });
+    } else {
+      // No geo support
+      fetchWaktuSholat(lat, lon).then(updateUI);
+    }
+  };
+
+  // Initial load with default (Surabaya) while waiting for geo
+  const initialTimes = await fetchWaktuSholat(lat, lon);
+  updateUI(initialTimes);
+  tryGeo();
 }
 
 

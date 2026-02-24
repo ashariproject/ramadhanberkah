@@ -1333,22 +1333,65 @@ body {
 
 /* === FOOTER === */
 .main-footer {
-  padding: 30px 20px 100px;
+  padding: 40px 20px 110px;
   text-align: center;
-  background: var(--bg2);
+  background: linear-gradient(to bottom, var(--bg) 0%, var(--bg2) 100%);
   border-top: 1px solid var(--border);
+}
+
+.footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.main-footer .copyright {
   font-size: 0.75rem;
   color: var(--text-muted);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  opacity: 0.8;
 }
 
-.main-footer a {
+.developer-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.developer-info span {
+  opacity: 0.6;
+}
+
+.dev-link {
   color: var(--gold);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s;
 }
 
-.main-footer p {
-  margin-bottom: 6px;
+.dev-link:hover {
+  color: var(--gold-light);
+  border-bottom-color: var(--gold-light);
+}
+
+/* Waktu Sholat Note */
+.waktu-note {
+  margin-top: 14px;
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  font-style: italic;
+  opacity: 0.8;
+  display: block;
 }
 
 /* hidden by default */
