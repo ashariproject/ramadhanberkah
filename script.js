@@ -435,8 +435,8 @@ async function fetchWaktuSholat(latitude, longitude, method) {
     const date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
     // Method 1 (Kemenag) or 2 (ISNA). Aladhan method 11 is for Majlis Ugama Islam Singapura, often close for Indonesia.
     // However, default Kemenag settings are usually better handled by method 1 or 2 with adjustments.
-    // We'll use method 11 (Singapore/MUIS) which is very common for SE Asia.
-    const url = `https://api.aladhan.com/v1/timings/${date}?latitude=${latitude}&longitude=${longitude}&method=11`;
+    // We'll use method 20 (Kemenag RI) as requested.
+    const url = `https://api.aladhan.com/v1/timings/${date}?latitude=${latitude}&longitude=${longitude}&method=20`;
     const res = await fetch(url);
     const data = await res.json();
     return data.data.timings;
@@ -469,22 +469,27 @@ async function loadWaktuSholat() {
         const times = await fetchWaktuSholat(pos.coords.latitude, pos.coords.longitude);
         if (times) {
           updateUI(times);
-          if (locEl) locEl.textContent = '* Jadwal waktu sholat berdasarkan lokasi Anda';
+          if (locEl) locEl.textContent = '* Jadwal waktu sholat berdasarkan lokasi Anda \u2022 Sumber: Kemenag RI';
         }
       }, async (err) => {
         // Fallback to Surabaya on error
         const times = await fetchWaktuSholat(lat, lon);
         updateUI(times);
+        if (locEl) locEl.textContent = '* Jadwal waktu sholat Kota Surabaya \u2022 Sumber: Kemenag RI';
       });
     } else {
       // No geo support
-      fetchWaktuSholat(lat, lon).then(updateUI);
+      fetchWaktuSholat(lat, lon).then(times => {
+        updateUI(times);
+        if (locEl) locEl.textContent = '* Jadwal waktu sholat Kota Surabaya \u2022 Sumber: Kemenag RI';
+      });
     }
   };
 
   // Initial load with default (Surabaya) while waiting for geo
   const initialTimes = await fetchWaktuSholat(lat, lon);
   updateUI(initialTimes);
+  if (locEl) locEl.textContent = '* Jadwal waktu sholat Kota Surabaya \u2022 Sumber: Kemenag RI';
   tryGeo();
 }
 
