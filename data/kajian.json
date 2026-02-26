@@ -317,6 +317,7 @@
       },
       "infografis": {
         "judul": "Tafsir Al-Ikhlas",
+        "gambar": "assets/foto/info-6.png",
         "poin": [
           "🌱 Hidup Perlu Proses",
           "🏛️ Allah Tempat Bergantung",
@@ -335,28 +336,37 @@
       "pemateri": "Ustad H. M. Shaleh Drehem, Lc., M.Ag",
       "foto_pemateri": "assets/foto/pemateri-7.jpg",
       "judul": "Performa Orang Beriman (part 1)",
-      "tag": "akidah",
-      "youtube_url": "",
-      "youtube_id": "",
+      "tag": "akhlak",
+      "youtube_url": "https://www.youtube.com/watch?v=esO1KGkL2eE",
+      "youtube_id": "esO1KGkL2eE",
       "ringkasan": {
         "pembuka": "Bagian pertama dari kajian tentang ciri-ciri dan performa seorang mukmin sejati dalam kehidupan.",
         "poin_utama": [
-          "Definisi iman: keyakinan hati, ucapan lisan, amal perbuatan",
-          "Ciri mukmin dari QS. Al-Mu'minun ayat 1-11",
-          "Khusyu dalam shalat sebagai pondasi performa mukmin",
-          "Menjauhi perbuatan dan perkataan sia-sia (laghwi)"
+          "<strong>💪 Karakteristik Mukmin Kuat</strong>",
+          "🌟 Mukmin yang kuat lebih baik dan lebih dicintai Allah daripada yang lemah.",
+          "🤝 Kekuatan harus dimanfaatkan untuk hal-hal yang bermanfaat bagi diri sendiri dan orang lain.",
+          "📊 Evaluasi diri untuk memastikan kontribusi positif dalam hidup.",
+          "<strong>❤️ Pentingnya Iman dan Akhlak</strong>",
+          "🕋 Iman yang kuat adalah dasar seorang Muslim.",
+          "✨ Akhlak yang baik merupakan cerminan iman seseorang.",
+          "🗣️ Berbicara hanya yang bermanfaat dan memuliakan tetangga adalah tanda akhlak mulia.",
+          "<strong>🔋 Kekuatan Fisik dan Finansial</strong>",
+          "🏃 Mukmin yang kuat memiliki fisik yang sehat.",
+          "💰 Kekuatan finansial memungkinkan untuk menunaikan kewajiban agama seperti zakat dan haji.",
+          "🤲 Bersyukur dan berlindung kepada Allah atas segala karunia kekuatan."
         ],
-        "ayat": "قَدْ أَفْلَحَ الْمُؤْمِنُونَ ۝ الَّذِينَ هُمْ فِي صَلَاتِهِمْ خَاشِعُونَ (QS. Al-Mukminun: 1-2)",
+        "ayat": "اَلْمُؤْمِنُ الْقَوِيُّ خَيْرٌ وَأَحَبُّ إِلَى اللهِ مِنَ الْمُؤْمِنِ الضَّعِيفِ (Hadist Riwayat Muslim)",
         "penutup": "Orang beriman memiliki standar performa tinggi dalam beribadah dan bermuamalah. Ramadhan adalah latihan intensifnya."
       },
       "infografis": {
-        "judul": "Performa Mukmin (1)",
+        "judul": "Mukmin yang Kuat",
+        "gambar": "assets/foto/info-7.png",
         "poin": [
-          "🙏 Khusyu dalam Shalat",
-          "🚫 Jauhi Perbuatan Sia-sia",
-          "💰 Tunaikan Zakat",
-          "🔒 Jaga Kehormatan Diri",
-          "📋 Amanah & Tepat Janji"
+          "💪 Kuat dalam Iman",
+          "✨ Akhlak Mulia",
+          "🏃 Fisik Sehat",
+          "💰 Mandiri Finansial",
+          "🤝 Manfaat bagi Sesama"
         ],
         "warna": "#0D5C63"
       }
@@ -369,28 +379,41 @@
       "pemateri": "KH. Ahmad Mujab Muthohar",
       "foto_pemateri": "assets/foto/pemateri-8.jpg",
       "judul": "Al-Qur'an Sebagai Hidangan Di Bulan Suci",
-      "tag": "tafsir",
-      "youtube_url": "",
-      "youtube_id": "",
+      "tag": "fiqih",
+      "youtube_url": "https://www.youtube.com/watch?v=DK4UXyMOy2I",
+      "youtube_id": "DK4UXyMOy2I",
       "ringkasan": {
-        "pembuka": "Al-Qur'an adalah hidangan ruhani terbaik di bulan Ramadhan. Kajian tentang adab dan keutamaan berinteraksi dengan Al-Qur'an.",
+        "pembuka": "Kajian spesial Ramadhan bersama KH. Ahmad Mujab Muthohar membahas makna puasa, syarat dan rukunnya, hingga struktur spiritual hati menurut Imam Ghazali.",
         "poin_utama": [
-          "Ramadhan adalah bulan Al-Qur'an diturunkan",
-          "Adab tilawah: thaharah, tartil, tadabbur",
-          "Jibril muraja'ah Al-Qur'an bersama Rasulullah setiap Ramadhan",
-          "Target dan cara khatam Al-Qur'an selama 30 hari"
+          "<strong>🌙 Makna dan Tingkatan Puasa</strong>",
+          "💧 Puasa secara bahasa berarti menahan diri; secara syariat adalah menahan diri dari pembatal dengan niat.",
+          "📈 Tiga tingkatan puasa: Iman Ghazali membagi menjadi menahan fisik (awam), menahan tujuh anggota tubuh (khusus), dan menjaga gerakan hati (khususil khusus).",
+          "<strong>📋 Syarat Wajib dan Rukun Puasa</strong>",
+          "✅ Syarat wajib: Islam, baligh, berakal, dan mampu. Orang gila tidak wajib qadha jika sembuh di tengah hari.",
+          "🕋 Rukun puasa: Niat (wajib dimalam hari untuk puasa wajib) dan menahan diri dari yang membatalkan.",
+          "💰 Fidyah: Solusi bagi yang tidak mampu puasa selamanya (lansia/sakit permanen).",
+          "<strong>🤰 Hukum Bagi Wanita Hamil & Menyusui</strong>",
+          "🤱 Wajib qadha jika meninggalkan puasa karena kondisi diri sendiri atau bersama janin.",
+          "⚠️ Jika hanya khawatir pada janin, wajib qadha DAN membayar fidyah.",
+          "<strong>✈️ Fiqih Perjalanan dan Waktu Berbuka</strong>",
+          "🕒 Musafir di pesawat mengikuti waktu tempat take-off atau waktu setempat sesuai durasi perjalanan.",
+          "🌍 Perdebatan ulama muncul mengenai waktu berbuka saat melintasi zona waktu yang ekstrim.",
+          "<strong>❤️ Struktur Hati Menurut Imam Ghazali</strong>",
+          "🧠 Hati terdiri dari Akal, Nafsu (Amarah, Lawwamah, Muthmainnah), dan Qalb sebagai kompas.",
+          "💎 Tingkatan Hati: Shadr (dada), Qalb (hati), Fu'ad (hati terdalam), dan Lubb (inti sari hati).",
+          "🛡️ Shadr berkaitan dengan ketaatan dasar; Lubb berkaitan dengan kesadaran penuh akan Allah."
         ],
         "ayat": "وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا (QS. Al-Muzzammil: 4)",
-        "penutup": "Jadikan Al-Qur'an sebagai sahabat setia di Ramadhan ini. Bacalah, pahami, amalkan."
+        "penutup": "Jadikan puasa sebagai sarana membersihkan hati hingga mencapai tingkatan Lubb, di mana setiap gerak-gerik hanya karena Allah."
       },
       "infografis": {
-        "judul": "Al-Qur'an di Ramadhan",
+        "judul": "Makna & Tingkatan Puasa",
         "poin": [
-          "📖 Tilawah Setiap Hari",
-          "🤲 Adab Membaca Qur'an",
-          "🎯 Target Khatam 30 Hari",
-          "💭 Tadabbur Maknanya",
-          "🔄 Muroja'ah Hafalan"
+          "📈 3 Tingkatan Puasa",
+          "📋 Syarat & Rukun",
+          "🤰 Fiqih Ibu & Bayi",
+          "✈️ Fiqih Musafir",
+          "💎 Struktur Hati"
         ],
         "warna": "#1A5276"
       }
